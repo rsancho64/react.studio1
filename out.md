@@ -127,7 +127,7 @@ Prefacio
 
 En el mundo del dev web de hoy, es importante mantenerse al tanto de las tendencias y tecnologias emergentes. Aqui entra React,js, una biblioteca JS creada por FB, que ha capturado la atención de la comunidad de desarrolladores en todo el mundo. Su naturaleza flexible y robusta la hace preferible para el dev de interfaces de usuario en aplicaciones web y de alto rendimiento.
 
-A medida que avanza el tiempo, la popularidad de React ha crecido exponencialmente, y hasta 2023, React ha demostrado ser una herramienta invaluable en el conjunto de herramientas de cualquier desarrollador. Con su creciente ecosistema de soluciones y proyectos de terceros, React ha seguido siendo una opción relevante y potente para desarrolladores frontend.
+A medida que avanza el tiempo, la popularidad de React ha crecido exponencialmente, y hasta 2023 ha demostrado ser una herramienta invaluable en el conjunto de herramientas de cualquier desarrollador. Con su creciente ecosistema de soluciones y proyectos de terceros, React ha seguido siendo una opción relevante y potente para desarrolladores frontend.
 
 Este libro esta destinado a programadores que ya estan familiarizados con JS y estan interesados en dar sus primeros pasos con React. El propésito es proporcionarte una guia sdlida y detallada que te ayude a comprender y dominar los conceptos clave de React. No sdlo aprenderas los fundamentos basicos, sino tambión las técnicas avanzadas y las mejores practicas que te permitiran escribir aplicaciones de React eficientes y de alto rendimiento.
 
@@ -149,11 +149,11 @@ Capitulo 1: Introduccion a React
 
 Introduccion
 
-biblioteca o libreria. técnicamente React es biblioteca; a menudo 'framework' por popularidad y gran cantidad de herramientas que lo rodean.
+Biblioteca o libreria? técnicamente React es biblioteca; a menudo 'framework' por popularidad y cantidad de herramientas que lo rodean.
 
-React -libreria- utiliza el lenguaje de programación JS desarrollada por la empresa Meta (antes FB) que ha revolucionado la forma en que se construyen las aplicaciones web.
+React -libreria- utiliza el LP JS. Desarrollado por Meta (antes FB) ha revolucionado la forma en que se construyen las apps web.
 
-Desde su lanzamiento en 2013, React ha ganado una inmensa popularidad debido a 
+Desde lanzamiento en 2013, React ha ganado una inmensa popularidad debido a 
 
 ¿Qué es React?
 
@@ -165,15 +165,15 @@ Historia de React
 
 React fue creado por Jordan Walke, ingeniero de sw en FB, en 2011. Walke se inspiró en XHP, una biblioteca de PHP para la creación de componentes HTML, y queria llevar un enfoque similar a JS. El resultado fue una biblioteca que permitia a los desarrolladores construir interfaces de usuario dinamicas y eficientes con JS.
 
-El primer producto de FB que utilizé React fue el feed de noticias -2011-. El éxito de React en el “muro” llevé a FB a utilizarlo en mas productos, incluyendo Instagram, que FB adquirié en 2012.
+El primer producto de FB que utilizé React fue el feed de noticias -2011-. El éxito de React en el “muro” llevó a FB a utilizarlo en mas productos, incluyendo Instagram, que FB adquiere en 2012.
 
-FB decidié liberar React como un proyecto de cédigo abierto en mayo de 2013 durante la conferencia JSConf US. La decisión de hacer de React un proyecto open source fue motivada por varias razones. Primero, FB queria compartir su enfoque innovador para la construcción de interfaces de usuario con la comunidad de desarrolladores. Segundo, FB esperaba que al hacer de React un proyecto de cédigo abierto, otros desarrolladores contribuirian a su dev y ayudarian a mejorar la biblioteca.
+FB decidié liberar React como proyecto de código abierto en mayo de 2013 durante la conferencia JSConf US. La decisión de hacer de React un proyecto open source fue motivada: Primero, FB queria compartir su enfoque innovador para la construcción de UIs con la comunidad de desarrolladores. Segundo, FB esperaba que al hacer de React un proyecto de código abierto, otros desarrolladores contribuirian a su dev y ayudarian a mejorar la biblioteca.
 
-A pesar de su popularidad, React no estuvo exento de controversia. En 2017, FB se encontré en medio de un problema sobre su licencia. La original, 'BSD + Patent', fue criticada porque daba a FB el derecho de revocar la licencia si una empresa demandaba a FB por infracción de patentes.
+A pesar de su popularidad, React no estuvo exento de controversia. En 2017, FB se encontró en medio de un problema sobre su licencia. La original, 'BSD + Patent', fue criticada -daba a FB el derecho de revocarla si una empresa demandaba a FB por infracción de patentes-.
 
 Esta cláusula provocṕ preocupación en la comunidad de dev, y algunas empresas, incluyendo WordPress, decidieron alejarse de React. En respuesta a la reacción de la comunidad, FB decidió cambiar la licencia de React a 'MIT' en septiembre de 2017. Esta es de código abierto y muy popular; no tiene la clausula de patentes que originçó todo el debate.
 
-Hoy React es una de las bibliotecas de JS mas populares para la construcción de UI (User Interface). Es utilizado por muchas empresas grandes y pequefias (Netflix, Airbnb, Uber, The New York Times y la propia Meta) y tiene una comunidad de dev muy activa. React ha seguido evolucionado desde su lanzamiento en 2013, con nuevas caracteristicas y mejoras introducidas de forma regular.
+Hoy React es una de las bibliotecas de JS mas populares para construcción de UIs. Es utilizado por muchas empresas grandes y pequefias (Netflix, Airbnb, Uber, NYT y la propia Meta) y tiene comunidad muy activa. React ha seguido evolucionado desde su lanzamiento en 2013, con nuevas caracteristicas y mejoras introducidas de forma regular.
 
 La Hª de React es un testimonio del poder de la innovación y la colaboración en la comunidad de dev de sw. A través de su enfoque en la eficiencia, la reutilización de componentes y la facilidad de uso, React ha cambiado la forma en que construimos y pensamos interfaces de usuario.
 
@@ -193,9 +193,9 @@ cambios en el estado de la app mas facil. código mas predecible y facil de ente
 
 Conclusión
 
-React es una gran herramienta para construir UIs. Su enfoque en componentes reutilizables, el Virtual DOM y el flujo de datos unidireccional lo hacen muy atractivo para nosotros como desarrolladores.
+React es una gran herramienta para construir UIs. Su enfoque en: *componentes reutilizables*, el *Virtual DOM* y el *flujo de datos unidireccional* lo hacen muy atractivo para nosotros como desarrolladores.
 
-En los préximos capitulos, profundizaremos en estos conceptos y aprenderemos cémo puedes comenzar a construir tus propias aplicaciones con React.
+profundizaremos en estos conceptos y aprenderemos a construir tus propias apps con React.
 
 Referencias
 
