@@ -113,8 +113,7 @@ Sobre el autor
 
 Carlos Azaustre nacié en Madrid, Espafia, en 1984. Es Ingeniero en Telematica por la Universidad Carlos III de Madrid, con una década de experiencia alternando la Ingenieria de sw y como Developer Relations en empresas como Google, IBM Research y Eventbrite.
 
-Actualmente, Carlos comparte su experiencia en el campo del dev de sw como Profesor Asociado en la Universidad Europea de Madrid, impartiendo clases en el Master de dev Web. Siempre comprometido con la educación y la divulgación tecnoldégica, tambión dirige un popular canal de YouTube (https://youtube.com/@carlosazaustre) donde ha cultivado
-una comunidad de mas de 125,000 suscriptores. En su canal, aborda temas relacionados con la programación y el dev web con JS, proporcionando información valiosa y consejos practicos a su audiencia.
+Actualmente, Carlos comparte su experiencia en el campo del dev de sw como Profesor Asociado en la Universidad Europea de Madrid, impartiendo clases en el Master de dev Web. Siempre comprometido con la educación y la divulgación tecnoldégica, tambión dirige un popular canal de YouTube (https://youtube.com/@carlosazaustre) donde ha cultivado una comunidad de mas de 125,000 suscriptores. En su canal, aborda temas relacionados con la programación y el dev web con JS, proporcionando información valiosa y consejos practicos a su audiencia.
 
 Carlos es autor del libro Aprendiendo JS, un recurso esencial para cualquiera que desee incursionar en la programación con este lenguaje. Con mas de 2000 ejemplares vendidos en Amazon, este libro ha sido varias veces el mas vendido en las categorias de dev de sw.
 
@@ -132,7 +131,7 @@ Este libro esta destinado a programadores que ya estan familiarizados con JS y e
 
 Empezaremos con una introducción a React, explorando su historia, sus fortalezas y por qué tiene la atención de la comunidad de dev web. A continuación, nos sumergiremos en los fundamentos de React, incluyendo la configuración del entorno de dev, la sintaxis JSX, y cémo crear y estructurar un  proyecto. Tambión aprenderas sobre los componentes, el manejo de eventos, y las complejidades del ciclo de vida de los componentes y como React las maneja.
 
-A medida que avanzamos, exploraremos temas mas complejos como la gestión del estado global utilizando la API Context y Redux, enrutamiento con React Router, y como aplicar estilos y disefio en tus proyectos de React. En las etapas posteriores del libro, cubriremos cémo consumir APIs y comunicarse con un servidor, como optimizar el rendimiento de tu app de React, y cémo probar y mantener la calidad de tu cédigo.
+A medida que avanzamos, exploraremos temas mas complejos como la gestión del estado global utilizando la API Context y Redux, enrutamiento con React Router, y como aplicar estilos y disefio en tus proyectos de React. En las etapas posteriores del libro, cubriremos cémo consumir APIs y comunicarse con un servidor, como optimizar el rendimiento de tu app de React, y cémo probar y mantener la calidad de tu código.
 
 Por ultimo, te guiaré a través de los pasos para desplegar tus apps de React en un entorno de producción, y te proporcionaré consejos sobre SEO y rendimiento para asegurar que tus apps no sdlo funcionen bien, sino que tambión sean encontrables por los buscadores y accesibles.
 
@@ -263,151 +262,151 @@ Download for macOS (x64)
 Or have a look at the Long Term Support (LTS) schedule
 Pagina de descarga de Node,js
 
-### Instalación de Vite
+### Vite (Next Generation Frontend Tooling)
 
-La herramienta *para hacer el setup del proyecto* sera Vite. Permite crear un proyecto de JS (Vanilla, con TypeScript, Vue, Svelte, React...), generar archivos y carpetasy un dev web srv para probarlo en local.
+Herramienta para *hacer el setup del proyecto*. 
+>"Get ready for a devel env that can finally catch up with you."
+Permite crear un proyecto JS (Vanilla, con TypeScript, Vue, Svelte, React...), generar archivos y carpeta sy un dev-web-srv para probar en local.
 
-Vite
-Next Generation
-Frontend Tooling
-Get ready for a development environment that can finally
-catch up with you.
-Why Vite? View on GitHub
+### React Developer Tools
 
-Pagina oficial del proyecto Vite
+[aqui](https://github.com/FB/react-devtools/tree/v3) o en los diferentes marketplaces de los navegadores; en la Chrome Store
 
-En los siguientes capitulos veremos como instalarlo y ejecutarlo. 
-
-### Instalación de React Developer Tools
-
-Este plugin o extension de navegador lo puedes econtrar aqui: https://github.com/FB/react-devtools/tree/v3
-
-o en los diferentes marketplaces de los navegadores; en la Chrome Store
-
-Esta herramienta nos sera **muy util para depurar** nuestras apps web. Podremos inspeccionar el arbol de componentes de React, visualizar el estado y las props de los componentes, etc.
+Esta herramienta sera **muy util para depurar** nuestras apps web. Podremos inspeccionar el arbol de componentes de React, y ver estados y propiedades etc.
 
 En préximos apartados veremos como generar un proyecto de React, su estructura y primera aplicacion. Pero antes, veamos una caracteristica principal de la libreria:
 
-JSX.
+## JSX.
 
 JSX: Sintaxis de JS y XML
 
 JSX es una sintaxis especial de marcado que utiliza React. Ahorra tiempo y ++devX.
 
-Aqui tienes un ejemplo de cémo se ve el cédigo JSX:
+Ejemplo de aspecto de código JSX:
 
-1 const element = <h1>Hola, mundo</h1>;
+```html
+const element = <h1>Hola, mundo</h1>;
+```
 
-Aprimera vista, la impresión es que estamos escribiendo codigo HTML y lo estamos mezclando dentro del cédigo JS, algo que es una muy mala practica y que no
-se deberia hacer.
+Aprimera vista, estamos escribiendo un mix de HTML y código JS, una muy mala practica. Pero no es asi. Esta sintaxis HTML-like es en realidad codigo JSX que se traduce en JS. 
 
-Pero esto no es asi. Esta sintaxis parecida a HTML es en realidad codigo JS, bueno, realmente cddigo JSX que se traduce en JS. Tambión tiene algunas
-diferencias clave que debes tener en cuenta. Por ejemplo, debido a que class1 es una palabra reservada en JS, debes usar className en lugar de class
-para asignar una clase CSS a un elemento.
+Diferencias ... ej: `class` es palabra reservada en JS,, usar `className` en su lugar para asignar una clase CSS a un elemento.
 
-¿Por qué usar JSX?
+¿Por qué usar JSX? Tiene varias ventajas que lo hacen util para desarrollar UIs con React:
 
-JSX tiene varias ventajas que lo hacen util para desarrollar UIs con React:
++ Legibilidad: El código JSX es muy HTML-like,, facil de leer/entender. Esto es especialmente util en UIs complejas con muchos elementos y componentes.
 
-+ Legibilidad: El cddigo JSX se parece mucho al HTML, lo que hace que sea facil de leer y entender. Esto es especialmente util cuando estds desarrollando
-UIs complejas con muchos elementos y componentes.
++ Potencia de JS: Aunque JSX es HTML-like tiene todo el poder de JS tras de él. Puedes insertar cualquier expresión JS valida dentro de llaves {} en tu código JSX.
 
-+ Potencia de JS: Aunque el cédigo JSX se parece a HTML, tiene todo el poder de JS detras de él. Puedes insertar cualquier expresión JS valida dentro de llaves {} en tu cédigo JSX.
++ ++rendimiento: Las herramientas de compilación como Babel transforman JSX en llamadas a `React.createElement()`, una forma eficiente de crear elementos de React.
 
-+ Optimizacion de rendimiento: Las herramientas de compilación como Babel transforman el cédigo JSX en llamadas a React. createElement, que es una
-forma eficiente de crear elementos de React.
+**Uso de JSX en React**
 
-Uso de JSX en React
-
-¿Por qué hacemos esto? Basicamente, React, a diferencia de otras bibliotecas (como Vue) o frameworks (como Angular), utiliza **JS para todo**: renderizar el codigo HTML, manejar la lógica e incluso estilos. Por tanto, cuando estamos componiendo la plantilla HTML que tendra un componente, en lugar de usar templating como en los otros recursos que hemos mencionado, utilizamos JS.
+¿Por qué hacemos esto? Basicamente, React, a diferencia de otras bibliotecas (como Vue) o frameworks (como Angular), utiliza **JS para todo**: renderiza codigo HTML, maneja las lógicas y maneja tambien los estilos. Por tanto, cuando estamos componiendo la plantilla HTML que tendra un componente, en lugar de usar *templating* como en los otros recursos que hemos mencionado, utilizamos JS.
 
 Esto complicaria mucho la escritura/lectura del código. La forma mas facil de entender esto es usando el **transpilador online de Babel**.
 
-Babel es una biblioteca de JS que permite usar las ultimas novedades que incorporan las versiones mas recientes de JS antes de que sean implementadas en el navegador. 
-(Entre ellas la sintaxis JSX que transpila el cddigo a una version que actualmente entiendan los navegadores. )
-Esta biblioteca no hay que instalarla manulamente, ya que diversas herramientas de hoy en dia como Vite, create-react-app o create-next-app ya las incorporan y es una cosa menos a la hora de empezar a trabajar con React.
+Babel es un compilador JS (biblioteca de JS, permite usar las ultimas novedades que incorporan las versiones mas recientes de JS antes de que sean implementadas en el navegador). (Entre ellas la sintaxis JSX que transpila el código a una version que actualmente entiendan los navegadores.)
+
+Babel no se instala manulamente, diversas herramientas como Vite, create-react-app o create-next-app ya la incorporan y es una cosa menos a la hora de empezar a trabajar con React.
 
 Este proyecto tiene una herramienta online que nos permite ver como se traduce -transpila- el código y comprobar su version en el navegador.
 
 Ve a https://babeljs.io/repl y asegurate que esta marcada la opción del preset "react".
 
-Herramienta web Babel para transpilacion a JS
+Ahora vamos a probar a escribir código JSX, por ejemplo el siguiente:
 
-Ahora vamos a probar a escribir cédigo JSX, por ejemplo el siguiente:
-
+```html
 <div>
     <h1>Hola mundo</h1>
 </div>
+```
 
 Este es el resultado que nos arroja el intérprete:
 
-1 "use strict
-5 React.createElement("div", null,
-4 React.createElement("hi", null, "Hola mundo")
-5s
+```js
+"use strict";
+React.createElement("div", null,
+  React.createElement("div", null, "Hola Mundo")
+);
+```
+.
+... o este ..
 
-Vamos a explicarlo. La herramienta ha traducido o transpilado el cédigo JSX a cédigo JS. Cada elemento "HTML" se ha sustituido por la función React.createElement(), propia de la biblioteca React. Esta funcidn, como su propio nombre indica, crea un elemento de HTML. Recibe 3 parametros:
+```js
+import { jsx as _jsx } from "react/jsx-runtime";
+_jsx("div", {
+  children: _jsx("h1", {
+    children: "Hola mundo"
+  })
+});
+```
 
-- el elemento a crear,
-- un objeto con propiedades (clases, atributos o props) y
+Vamos a explicarlo. La herramienta ha traducido -o *transpilado*- el código JSX a JS. Cada elemento "HTML" se ha sustituido por la función `React.createElement()`, de biblioteca React. Esta como nombre indica, crea un elemento HTML. 
+
+Recibe 3 parametros:
+
+- el tipo de elemento a crear,
+- un objeto con propiedades (clases, atributos o props) -puede ser `null`- y
 - una lista de elementos hijos.
 
-Parece facil y que no hay necesidad de usar JSX, podemos escribir el cédigo en JS puro. Bueno, vamos a complicar un poco mis el cdigo JSX:
+Parece facil y que no hay necesidad de usar JSX, podemos escribir el código en JS puro. Bueno, vamos a complicar un poco más el cdigo JSX:
 
+```html
 <div class="header">
-<hi class="header__title">Hola mundo</h1>
-<button onclick="open" class="header__button">Menu</button>
-<a href="/about" class="header__link">Sobre mi</a>
+  <h1 class="header__title">Hola mundo</h1>
+  <button onclick="open" class="header__button">Menu</button>
+  <a href="/about" class="header__link">Sobre mi</a>
 </div>
+```
 
-Este es el código que tendriamos que escribir si lo hicieramos en JS plano:
+Este es el código que tendriamos que escribir en JS plano:
 
 ```js
 "use strict";
 React.createElement("div", {
-class: "header"
-3,
-React.createElement("hi", {
-class: "header_title"
-3,
-"Hola mundo"
- »
- React.createElement("button", {
- onclick: "open",
- class: "header__button"
-3,
-"Menu"
->
-React.createElement("a", {
-href: "/about",
-class: "header__link"
-},
+    class: "header"
+  },
+  React.createElement("h1", {
+      class: "header_title"
+    },
+    "Hola mundo"
+   ),
+  React.createElement("button", {
+      onclick: "open",
+      class: "header__button"
+    },
+    "Menu"
+    ),
+    React.createElement("a", {
+      href: "/about",
+      class: "header__link"
+    },
+    "Sobre mi"
+    )
+};
 ```
 
-"Sobre mi"
-
-¿como se ve? se podria hacer, pero no es nada practico ¿es legible? Personalmente prefiero JSX para codificar el templating de mis componentes (si no, es muy dificil de
-mantener y afiadir o cambiar elementos con el paso del tiempo.)
+Se podria, pero no es nada practico ¿es legible? Personalmente prefiero JSX para codificar el templating de mis componentes (si no, es muy dificil de mantener y afiadir o cambiar elementos con el paso del tiempo.)
 
 Es comprensible que si llevas tiempo en el mundo del dev web, te "eche un poco para atras" el tener que escribir algo que parece HTML en cidigo JS. No te preocupes, yo pensaba lo mismo y fue una de las causas por las que en un inicio rechazaba a React.
 
 Pero una vez se ve el punto, que realmente es JS y que es para facilitarnos la vida como desarrolladores, me cambié el chip.
 
-No todo el cédigo que vas a emplear en React es JSX. En React lo que mas vas a usar es JS. y Vanilla. React sdlo aporta ciertos métodos y estructura, pero practicamente todo el cédigo que escribirds es JS. JSX sdlo se utiliza para el maquetado o plantilla que tendran tus componentes. Pero no te preocupes que vamos air viendo todo esto.
+No todo el código que vas a emplear en React es JSX. En React lo que mas vas a usar es JS. y Vanilla. React sdlo aporta ciertos métodos y estructura, pero practicamente todo el código que escribirds es JS. JSX sdlo se utiliza para el maquetado o plantilla que tendran tus componentes. Pero no te preocupes que vamos a ir viendo todo esto.
 
 Creación de un proyecto de React
 
-Setup del proyecto con Vite
+*Setup con Vite*
 
-Ya hemos visto JSX que es una de las tecnologias o caracteristicas que distinguen a React y ahora podemos ponernos manos a la obra a crear lo que seria nuestra
-primera app web con esta biblioteca.
-
+Ya hemos visto JSX que es una de las tecnologias o caracteristicas que distinguen a React y ahora podemos ponernos manos a la obra a crear lo que seria nuestra primera app web con esta biblioteca.
+@@@@@
 No vamos a hacer nada del otro mundo, simplemente algo muy sencillo pero a la vez necesario para entender el flujo de la programación, las herramientas y diversas
 cosas a tener en cuenta que la primera vez pueden ser un poco liosas, pero luego ya se hacen de forma sistématica y dejamos de tenerlas en cuenta.
 
 Hay diversas formas de crear una app con React desde cero. Ninguna es mejor ni peor, inicamente cambia la forma de configurar todo antes de empezar.
 
-Podemos hacerlo de forma "manual", para ello necesitariamos instalar y configurar Webpack u otra herramienta de empaquetado y transpilación de cddigo JSX y JS moderno a cédigo comprensible por el navegador, ademas de varios plugins para que esto funcione correctamente y por supuesto, las bibliotecas o paquetes react y react -dom necesarias para poder utilizar sus funciones.
+Podemos hacerlo de forma "manual", para ello necesitariamos instalar y configurar Webpack u otra herramienta de empaquetado y transpilación de código JSX y JS moderno a código comprensible por el navegador, ademas de varios plugins para que esto funcione correctamente y por supuesto, las bibliotecas o paquetes react y react -dom necesarias para poder utilizar sus funciones.
 
 Puede ser interesante de hacer esto si quieres comprender "la magia" detras de las herramientas actuales, pero hoy en dia, en mi opinion, si es tu primera vez en este
 ecosistema de dev web con React, son mas trabas y frustaciones a llevarse, que arrancar con algo mas configurado por defecto y que te permite centrarte en aprender la librerfa y forma de trabajar con ella.
@@ -435,7 +434,7 @@ Elegimos la variante sin TypeScript
 react-ts
 ```
 
-Y ya sdlo tenemos que ir al directorio que se acaba de crear y ejecutar los comandos que nos indica para que se instalen las dependencias y se ejecute el cédigo en un
+Y ya sdlo tenemos que ir al directorio que se acaba de crear y ejecutar los comandos que nos indica para que se instalen las dependencias y se ejecute el código en un
 servidor de dev local:
 
 Encuesta del Estado de JS 2022
@@ -469,7 +468,7 @@ Nuestro primer "Hola Mundo" con React! Con un logo en SVG rotando, un poco de te
 
 Estructura de archivos y carpetas
 
-Pasemos a ver que cédigo nos generé. Esta es la estructura de archivos y carpetas si abrimos nuestro editor de cédigo:
+Pasemos a ver que código nos generé. Esta es la estructura de archivos y carpetas si abrimos nuestro editor de código:
 
 1 - node_modules
 2 - sre
@@ -534,13 +533,13 @@ directives --max-warnings 0",
 slint-plugin-react-refresh":
 vite 4.3.9"
 
-El script dev ejecuta un servidor local de dev para probar nuestra app en el navegador e incorpora hot reloading. Esto quiere decir que a cada cambio que hagamos en nuestro cédigo, se vera reflejado en el navegador inmediatamente sin necesidad de tener que recargarlo manualmente.
+El script dev ejecuta un servidor local de dev para probar nuestra app en el navegador e incorpora hot reloading. Esto quiere decir que a cada cambio que hagamos en nuestro código, se vera reflejado en el navegador inmediatamente sin necesidad de tener que recargarlo manualmente.
 
-El script build prepara nuestro cédigo para ser desplegado en un entorno de producción.
+El script build prepara nuestro código para ser desplegado en un entorno de producción.
 
-preview ejecuta un servidor local pero el cédigo que emplea para ello es el cddigo ya listo para producción.
+preview ejecuta un servidor local pero el código que emplea para ello es el código ya listo para producción.
 
-Y por ultimo lint ejecuta el linter para verificar que nuestro cédigo sigue las normas de estilo especificadas en el ficheroeslintre.cjs.
+Y por ultimo lint ejecuta el linter para verificar que nuestro código sigue las normas de estilo especificadas en el ficheroeslintre.cjs.
 
 vite.config.js
 
@@ -582,13 +581,13 @@ Para que funcione, necesitamos incorportar el fichero de entrada de la app en JS
 
 `src/`
 
-Esta es la carpeta que alberga todo el cédigo fuente de nuestra app. Verds que hay varios archivos pero los que nos interesan son el main. jsx y el App. jsx. El
+Esta es la carpeta que alberga todo el código fuente de nuestra app. Verds que hay varios archivos pero los que nos interesan son el main. jsx y el App. jsx. El
 resto son ficheros de estilos css y algunas imagenes. 
 
 `main.JSX`
 
 El fichero principal de la app. Si te das cuenta, tiene extensión JSX. Puedes usar la extension . js, va a funcionar igual, aunque por convención, si el fichero es
-un componente de React y/o utiliza cédigo JSX lo ideal es que lo nombremos como tal.
+un componente de React y/o utiliza código JSX lo ideal es que lo nombremos como tal.
 
 Ademis si utilizas un theme en tu editor para mostrar iconos diferentes segtin el
 
@@ -619,7 +618,7 @@ ser utilizados. Las dos primeras son las importaciones de react y react-
 dom. La primera nos permite usar las funciones de la biblioteca como el
 React. StrictMode que es una etiqueta que permite que nuestra aplicacion sea
 mas segura. Esto quiere decir que si algo falla en la aplicacion, no se ejecutaré nada
-més que el cédigo que esté dentro de la etiqueta.
+més que el código que esté dentro de la etiqueta.
 
 Y la segunda, nos permite usar el método ReactDOM.createRoot para
 renderizar y construir el componente App que contiene toda la légica de nuestra
@@ -631,7 +630,7 @@ donde se renderizar4 nuestra app. Despues usamos el método render que se
 le pasa el componente o conjunto de componentes a renderizar en formato JSX. En
 este caso<App /> entre los componentes de <StrictMode>.
 
-Las ultimas importaciones son el fichero index. css que contiene el cddigo de
+Las ultimas importaciones son el fichero index. css que contiene el código de
 estilos CSS que se aplicara a toda la app. Y aunque no lo usemos directamente
 en este archivo, Vite lo que hace despues es afiadirlo como link de estilo al head del
 HTML.
@@ -708,11 +707,11 @@ con los Hooks, se elimina esa duda de cuando usar funciones o cuando usar clases
 Las apps han reducido su peso y performance al no usar clases.
 
 Dentro de la función, lo ultimo que se hace es devolver la plantilla, simplemente con
-un return y el cédigo JSX que represente el componente. Aqui recuerda siempre
+un return y el código JSX que represente el componente. Aqui recuerda siempre
 enviar al menos un elemento como padre que englobe al resto de elementos, por lo
 que vimos en el capitulo de JSX.
 
-Para mejor lectura del cddigo, lo conveniente es engloblar toda el cédigo JSX entre
+Para mejor lectura del código, lo conveniente es engloblar toda el código JSX entre
 paróntesis (...), ano ser que sea tnicamente una linea y en ese caso se podria
 devolver directamente. Pero por buenas practicas y prevención de errores a futuro,
 lo mejor es que lo afiadas siempre.
@@ -757,8 +756,8 @@ onClick Tenemos que usar una función de callback, si no lo podra ejecutar. Esto
 un error bastante comun, el poner directamente la función y que el componente no
 haga nada y no encontrar el error.
 
-Para eso, siempre es recomendable, sacar esta función fuera del cédigo JSX y tratarla
-como un manejador. Te muestro el cédigo:
+Para eso, siempre es recomendable, sacar esta función fuera del código JSX y tratarla
+como un manejador. Te muestro el código:
 
 1 const handleClick = () => setCount((count) => count + 1)
 2
@@ -854,7 +853,7 @@ tener estado local y métodos del ciclo de vida. Sin embargo, como hemos citado,
 con la introducción de los Hooks en React 16.8, ahora puedes usar el estado y otros
 aspectos de React en los componentes funcionales.
 
-Por lo tanto, a menos que estés trabajando en un cédigo base antiguo que atin use
+Por lo tanto, a menos que estés trabajando en un código base antiguo que atin use
 componentes de clase, es probable que quieras usar componentes funcionales en
 la mayoria de los casos. Los componentes funcionales son mas faciles de leer y
 entender, y los Hooks te permiten reutilizar la légica del estado de una manera mas
@@ -1298,7 +1297,7 @@ Aqui tienes un ejemplo de cémo se veria esto:
 Aunque el props drilling puede ser Util en algunos casos, puede volverse
 problematico cuando tienes una estructura de componentes grande y compleja. En
 estos casos, puede ser dificil rastrear cémo se estan pasando los datos y puede llevar
-aun cédigo innecesariamente complicado.
+aun código innecesariamente complicado.
 
 Event Bubbling
 
@@ -1350,7 +1349,7 @@ manera que manejarias cualquier otra función en JS.
 En los siguientes apartados, exploraremos mas a fondo cémo podemos utilizar los
 
 eventos para controlar el estado de nuestra app y crear interacciones mas
-complejas. Pero por ahora, te animo a que juegues con los ejemplos de cédigo que
+complejas. Pero por ahora, te animo a que juegues con los ejemplos de código que
 hemos visto en este apartado. Intenta crear tus propios manejadores de eventos, y
 observa cémo puedes usarlos para cambiar el comportamiento de tus componentes
 de React.
@@ -1361,7 +1360,7 @@ entender los tiempos y los datos a los que podemos acceder en cada momento de la
 renderización del componente.
 Referencias
 
-- Bank, A., Porcello, E. (2017). Learning React: Functional Web Development with
+- Bank, A., Porcello, E. (2017). Learning React: Functional Web devel with
 React and Redux. O'Reilly Media.
 
 + FB Inc. (2023). Your first component. https://react.dev/learn/your-first-
@@ -1615,7 +1614,7 @@ Los Hooks ofrecen varias ventajas sobre los componentes de clase:
 
 + Simplicidad: Los Hooks permiten trabajar con el estado y otras caracteristicas
 de React sin tener que entender la complejidad de las clases en JS. Esto
-hace que el cédigo sea mas facil de leer y escribir.
+hace que el código sea mas facil de leer y escribir.
 
 -Reutilización de légica de estado: Los Hooks permiten extraer la légica
 de estado de un componente, de modo que pueda ser probada de forma
@@ -1624,9 +1623,9 @@ compartir légica de estado entre multiples componentes.
 
 + Separación de preocupaciones: A diferencia de los métodos del ciclo de vida
 en los componentes de clase, que agrupan diferentes tipos de légica (datos de
-busqueda, configuracion de suscripciones, etc.) en bloques de cddigo, los Hooks
+busqueda, configuracion de suscripciones, etc.) en bloques de código, los Hooks
 permiten separar la légica basada en el tipo de operación que se esta realizando,
-lo que lleva a un cddigo mas limpio y facil de seguir y mantener.
+lo que lleva a un código mas limpio y facil de seguir y mantener.
 
 -Optimizacion del rendimiento: Algunos Hooks, como useMemo y
 useCallback, permiten optimizar el rendimiento al evitar operaciones
@@ -1750,8 +1749,8 @@ La sintaxis basica de useEffect es la siguiente:
 2 // Efecto secundario
 3}, [dependencias]) ;
 
-El primer argumento de useEffect es una función que contiene el cddigo del
-efecto secundario. Este cédigo se ejecutara después de que se haya completado el
+El primer argumento de useEffect es una función que contiene el código del
+efecto secundario. Este código se ejecutara después de que se haya completado el
 renderizado.
 
 El segundo argumento es un array de dependencias. React rastreard las
@@ -1928,7 +1927,7 @@ valor en lugar del valor por defecto "light".
 
 useContext es un Hook muy potente que simplifica el uso de los contextos
 en React. Permite acceder a los valores de contexto sin tener que envolver los
-componentes en Context . Consumer, lo que lleva a un cddigo mas limpio y facil
+componentes en Context . Consumer, lo que lleva a un código mas limpio y facil
 de seguir.
 
 useRef
@@ -2495,7 +2494,7 @@ permite escribir componentes mas limpios y reutilizables sin la necesidad de cla
 Sin embargo, es importante recordar que los Hooks son sdlo herramientas, y como
 todas las herramientas, deben ser utilizadas con cuidado y entendimiento. No
 todos los problemas requieren Hooks, y no todos los componentes los necesitan.
-Como siempre, la clave para escribir buen cédigo en React es entender las
+Como siempre, la clave para escribir buen código en React es entender las
 necesidades de tu app y utilizar las herramientas adecuadas para el trabajo.
 
 En el proximo capitulo, cambiaremos de enfoque y nos adentraremos en el mundo
@@ -2505,7 +2504,7 @@ entre toda la app. Veremos diferentes enfoques y técnicas, desde el uso del
 Contexto de React hasta bibliotecas de gestion de estado mas sofisticadas.
 Referencias
 
-- Banks, A., y Porcello, E. (2020). Learning React: Functional Web Development
+- Banks, A., y Porcello, E. (2020). Learning React: Functional Web devel
 with React and Redux. O’Reilly Media.
 
 + Stefanov, S. (2016). React: Up & Running: Building Web Applications. O'Reilly
@@ -2547,7 +2546,7 @@ el theme que se muestra en la UI (modo "claro", modo "oscuro’,...)
 La gestion del estado global se refiere a cémo se organiza, almacena y manipula este
 estado global. Una gestión adecuada del estado global puede hacer que tu aplicacion
 sea mas predecible, facil de entender y de mantener. Sin embargo, una mala gestion
-del estado puede llevar a errores dificiles de rastrear y a un cédigo complejo y dificil
+del estado puede llevar a errores dificiles de rastrear y a un código complejo y dificil
 de manejar.
 
 En React, hay varias formas de manejar el estado global. Algunas de las mas
@@ -2621,7 +2620,7 @@ Hook useContext
 Ya lo introdujimos en los capitulos anteriores, a partir de React version 16.8,
 tambión podemos usar el Hook useContext para acceder al valor del contexto.
 
-Esto puede hacer que nuestro cédigo sea mas limpio y facil de entender.
+Esto puede hacer que nuestro código sea mas limpio y facil de entender.
 
 Ya lo vimos antes, pero te vuelvo a compartir un ejemplo de como se usa
 useContext:
@@ -2685,7 +2684,7 @@ estado global en una app React. Sin embargo, tambión tiene sus limitaciones.
 Por ejemplo, puede ser menos eficiente para grandes apps con muchos
 cambios de estado, y puede ser mas dificil de manejar para estados complejos o
 légicas de negocio. Ademas, el uso excesivo de la Context API puede hacer que
-el cédigo sea més dificil de entender y mantener, ya que el estado se comparte
+el código sea més dificil de entender y mantener, ya que el estado se comparte
 implicitamente a través del arbol de componentes.
 
 A pesar de estas limitaciones, la Context API sigue siendo una buena opción para
@@ -2728,7 +2727,7 @@ return (
 </ThemeContext . Provider>
 
 v5
-En este cédigo, ThemeProvider es un componente que utiliza el
+En este código, ThemeProvider es un componente que utiliza el
 ThemeContext.Provider para compartir el estado del tema y la función
 
 toggleTheme con sus componentes hijos.
@@ -2776,9 +2775,9 @@ a5
 a2}
 
 Como puedes ver, el uso de custom hooks con la Context API puede hacer que
-nuestro cédigo sea mas limpio, mas facil de entender y mis reutilizable. Nos
+nuestro código sea mas limpio, mas facil de entender y mis reutilizable. Nos
 permite encapsular la ldgica de acceso al contexto en un solo lugar, lo que facilita el
-mantenimiento y las pruebas de nuestro cédigo.
+mantenimiento y las pruebas de nuestro código.
 
 En el siguiente apartado, exploraremos otra solución popular para la gestidn del
 estado global en React: Redux. Esta herramienta puede ser un poco mas compleja
@@ -2880,7 +2879,7 @@ Ejemplo practico
 
 Vamos a ver un ejemplo practico de cémo se puede usar Redux para gestionar el
 estado global de una app. Imagina que estamos construyendo una app
-de lista de tareas. Vamos a reutilizar el cddigo de los ejemplos vistos arriba.
+de lista de tareas. Vamos a reutilizar el código de los ejemplos vistos arriba.
 
 Podriamos tener un store que almacene la lista de tareas, una acción para afiadir
 
@@ -2905,13 +2904,13 @@ id: nextTodold++,
 9 }
 105
 1}
-En este cédigo, addTodo es un action creator que crea una acción con el tipo
+En este código, addTodo es un action creator que crea una acción con el tipo
 ADD_TODO y el texto de la tarea.
 
 A continuación, definamos el reducer para manejar esta acción. En este caso,
 nuestro estado ser un array de tareas, y cada tarea sera un objeto con idy text:
 
-Podemos usar el mismo cédigo del ejemplo del apartado anterior:
+Podemos usar el mismo código del ejemplo del apartado anterior:
 
 1 function todosReducer(state = [], action) {
 2 switch (action.type) {
@@ -2950,11 +2949,11 @@ nuestra app:
 12 store.dispatch(addTodo('Aprender React'));
 13 store.dispatch(addTodo('Aprender Redux'));
 
-En este cédigo, creamos el store de Redux con todosReducer, registramos un
+En este código, creamos el store de Redux con todosReducer, registramos un
 listener que se ejecuta cada vez que el estado cambia, y despachamos algunas
 acciones para afiadir tareas.
 
-Aqui tienes el cddigo completo del ejemplo para que puedas practicar desde la
+Aqui tienes el código completo del ejemplo para que puedas practicar desde la
 terminal, usando Node.js
 
 1 // Importa Redux
@@ -3006,7 +3005,7 @@ as}
 37 store.dispatch(addTodo('Aprender React'));
 38 store.dispatch(addTodo('Aprender Redux'));
 
-Este cédigo hace lo siguiente:
+Este código hace lo siguiente:
 
 - Importa Redux.
 
@@ -3020,7 +3019,7 @@ Este cédigo hace lo siguiente:
 
 « Despacha algunas acciones para afiadir tareas.
 
-Puedes ejecutar este cédigo en un entorno de Node.js después de instalar Redux con
+Puedes ejecutar este código en un entorno de Node.js después de instalar Redux con
 
 npm install redux.
 
@@ -3054,7 +3053,7 @@ complejo y verboso que otras soluciones como la Context API.
 En el siguiente apartado, exploraremos cémo integrar Redux en una app
 React y cémo puede ayudarnos a manejar el estado de una manera més eficiente y
 escalable. Tambión veremos la version de Redux Toolkit que hace mas sencillo poder
-utilizar Redux sin tanto cddigo.
+utilizar Redux sin tanto código.
 Integraciédn de Redux en un proyecto de React
 
 Ahora mostraré cémo integrar Redux en un proyecto de React desde cero.
@@ -3062,7 +3061,7 @@ Ahora mostraré cémo integrar Redux en un proyecto de React desde cero.
 Explicaremos cémo configurar el store de Redux, cémo conectar componentes de
 React al store y cémo pueden los componentes interactuar con el estado a través de
 acciones. En lugar de usar la biblioteca Redux tradicional, utilizaremos el proyecto
-Redux Toolkit que simplifica mucho mas el cddigo.
+Redux Toolkit que simplifica mucho mas el código.
 
 Vamos a crear una app de carrito de compras simple utilizando React y
 Redux.
@@ -3107,7 +3106,7 @@ archivo nuestro
 Configuración de Redux
 
 Primero, vamos a configurar nuestro slice de Redux para el carrito de compra. En
-srce/features/cart/cartSlice. js, agrega el siguiente cddigo:
+srce/features/cart/cartSlice. js, agrega el siguiente código:
 
 1 import { createSlice } from '@reduxjs/toolkit';
 
@@ -3144,7 +3143,7 @@ cartSlice.actions;
 19
 20 export default cartSlice.reducer;
 
-En este cddigo, utilizamos createSlice de @reduxjs/toolkit paracrear un
+En este código, utilizamos createSlice de @reduxjs/toolkit paracrear un
 slice de Redux para el carrito de compras.
 
 Un slice incluye el reducer y las acciones, lo que simplifica la configuración de
@@ -3153,7 +3152,7 @@ Redux. Definimos dos acciones, addToCart y removeFromCart, que afiaden y
 eliminan articulos del carrito, respectivamente.
 
 Acontinuación, vamos a configurar el store de Redux. En sre/store. js, agregael
-siguiente cédigo:
+siguiente código:
 
 1 import { configureStore } from '@reduxjs/toolkit';
 
@@ -3170,13 +3169,13 @@ siguiente cédigo:
 
 8 3)5
 
-En este cédigo, utilizamos configureStore de @reduxjs/toolkit para crear
+En este código, utilizamos configureStore de @reduxjs/toolkit para crear
 el store de Redux. Pasamos nuestro cartReducer al store como un reducer.
 
 Creacion de los componentes
 
 Ahora, vamos a crear nuestro componente de carrito de compras. En src/
-features/cart/Cart. js, agrega el siguiente cddigo:
+features/cart/Cart. js, agrega el siguiente código:
 
 1 import React from ‘react’;
 
@@ -3276,7 +3275,7 @@ index,
 at
 42 export default Cart;
 
-Eneste cédigo, utilizamos useSe lector para seleccionar el estado del carrito dela
+Eneste código, utilizamos useSe lector para seleccionar el estado del carrito dela
 tienda Redux, y useDispatch para despachar acciones.
 
 Cuando el usuario hace clic en el botón "Add to cart", despachamos la acción
@@ -3286,7 +3285,7 @@ carrito", despachamos la acción removeFromCart con el articulo.
 
 Finalmente, vamos a utilizar nuestro componente de carrito de compras en nuestro
 componente principal de la app. En src/App.js, agrega el siguiente
-cédigo:
+código:
 
 1 import React from ‘react’;
 2 import { Provider } from 'react-redux';
@@ -3305,7 +3304,7 @@ cédigo:
 10 </Provider>
 
 14 export default App;
-En este cédigo, utilizamos el componente Provider de react-redux para
+En este código, utilizamos el componente Provider de react-redux para
 proporcionar el store de Redux a nuestra app. Luego, utilizamos nuestro
 componente Cart.
 
@@ -3356,7 +3355,7 @@ funcional. Permite escribir c6digo minimalista y libre de boilerplate.
 
 MobX es muy eficiente en cuanto a rendimiento y ofrece una gran libertad de
 arquitectura, permitiendo manejar el estado de la app fuera de cualquier
-framework de interfaz de usuario. Esto hace que tu cédigo sea desacoplado, portatil
+framework de interfaz de usuario. Esto hace que tu código sea desacoplado, portatil
 
 y, sobre todo, facilmente testeable.
 
@@ -3395,7 +3394,7 @@ Referencias
 + Porcello, E., & Banks, A. (2020). Learning React: Modern Patterns for Developing
 React Apps. O'Reilly Media.
 
-+Porcello, E., & Banks, A. (2017). Learning React: Functional Web Development
++Porcello, E., & Banks, A. (2017). Learning React: Functional Web devel
 with React and Redux. O'Reilly Media.
 
 - Abramov, D., & Clark, M. (2016). Redux Documentation. https://redux.js.org/
@@ -3583,13 +3582,13 @@ e\
 23
 
 En el siguiente apartado, aprenderemos sobre la navegacion programatica, es decir,
-cémo cambiar de ruta mediante cédigo en lugar de hacer clic en un enlace.
+cémo cambiar de ruta mediante código en lugar de hacer clic en un enlace.
 
 Navegación programatica
 
 Hasta ahora, hemos estado navegando entre rutas utilizando el componente Link
 que proporciona React Router. Sin embargo, a veces necesitaremos cambiar de
-ruta programaticamente, es decir, mediante cédigo. Por ejemplo, podriamos querer
+ruta programaticamente, es decir, mediante código. Por ejemplo, podriamos querer
 
 redirigir al usuario a una pagina diferente después de que envie un formulario.
 React Router nos proporciona el hook useHistory para este propdsito.
@@ -3714,7 +3713,7 @@ ReactDOM. createRoot (document. getElementByTd('root')).render(<Ap
 p\
 50 />);
 
-En este cédigo, primero importamos los componentes necesarios de react -
+En este código, primero importamos los componentes necesarios de react -
 router-dom. Luego, definimos nuestros componentes de ejemplo para las rutas
 (Home, About, Users).
 
@@ -3986,7 +3985,7 @@ div>;
 4. Styled-components y CSS en JS: Las bibliotecas como styled-components
 permiten definir componentes con estilos adjuntos utilizando JS. Este
 enfoque combina los estilos y el componente en una sola entidad, lo que puede
-hacer que el cédigo sea mas legible y manejable.
+hacer que el código sea mas legible y manejable.
 
 1 import styled from 'styled-components' ;
 2
@@ -4729,7 +4728,7 @@ disefio en React. Hemos comenzado con una introducción a las diferentes formas
 de aplicar estilos CSS en React.
 
 Luego, hemos profundizado en CSS Modules y styled-components, discutiendo
-sus ventajas, inconvenientes y proporcionando ejemplos de cédigo para cada uno.
+sus ventajas, inconvenientes y proporcionando ejemplos de código para cada uno.
 Hemos explorado cémo utilizar Grid y Flexbox en React para crear disefios de
 interfaz de usuario complejos y responsivos. Finalmente, hemos discutido como
 integrar bibliotecas de componentes UI en tus proyectos de React, presentando
@@ -4872,7 +4871,7 @@ En React, las peticiones HTTP suelen realizarse en el ciclo de vida del componen
 
 especificamente en el método componentDidMount para los componentes de
 clase, o en el Hook useEffect para los componentes funcionales.
-Veamos un ejemplo de cédigo de cémo se hace esto con Axios (Recuerda que con
+Veamos un ejemplo de código de cémo se hace esto con Axios (Recuerda que con
 Fetch es bastante similar):
 
 1 import React, { useState, useEffect } from ‘react’;
@@ -4937,7 +4936,7 @@ recibidos.
 Ademis, este Hook realizara peticiones de tipo GET. Para ello el Hook recibe como
 argumento ur1, que es la URL a la que se hard la petición.
 
-Aqui tienes el cédigo del Hook:
+Aqui tienes el código del Hook:
 
 1 import { useState, useEffect } from ‘react’;
 2
@@ -4995,14 +4994,14 @@ renderizado del componente, dependiendo del estado de la petición.
 Este Custom Hook es una herramienta muy util que puedes reutilizar en diferentes
 partes de tu app para manejar las peticiones HTTP de una manera mas
 eficiente y ordenada. Y lo mejor es que lo puedes reutilizar en cualquier parte de tu
-cédigo dónde hagas peticiones de este tipo.
+código dónde hagas peticiones de este tipo.
 
 Para realizar una peticion POST, Si queremos reutilizar, necesitamos modificar un
 poco el Custom Hook useHttp. los Hooks de React deben seguir ciertas reglas y
 no pueden ser llamados condicionalmente o dentro de funciones. En lugar de eso,
 podemos modificar el Hook useHttp para que devuelva una función que pueda ser
 
-llamada cuando sea necesario. Aqui esta el cédigo modificado:
+llamada cuando sea necesario. Aqui esta el código modificado:
 
 1 import { useState, useCallback } from ‘react’;
 
@@ -5192,7 +5191,7 @@ useQuery es un Hook que puedes usar para obtener datos de tu API. Vendria a
 ser como el Custom Hook useHttp que hicimos anteriormente, pero con super-
 vitaminas.
 
-Aqui tienes un ejemplo de cédigo de como se usa:
+Aqui tienes un ejemplo de código de como se usa:
 
 1 import { QueryClient, QueryClientProvider, useQuery } from
 *@tans\
@@ -5248,7 +5247,7 @@ es <div> utiliza esta clave para almacenar en caché los datos de la consulta y 
 + Manejando el estado de la consulta: useQuery devuelve un objeto con varios
 campos que representan el estado actual de la consulta. En este caso, estamos
 
-Ahora te explico mAs en detalle que hace el cédigo anterior.
+Ahora te explico mAs en detalle que hace el código anterior.
 
 -Importa  TanStack Query: Primero, importamos QueryClient,
 QueryClientProvider y useQuery de @tanstack/react-query.
@@ -5409,8 +5408,8 @@ o podriamos haber proporcionado datos incorrectos. Por lo tanto, es importante
 manejar estos errores de manera adecuada.
 
 En el caso de Fetch y Axios, estos lanzaran una excepción si ocurre un error de red,
-pero no si la petición se realiza con éxito pero el servidor devuelve un cédigo de
-estado de error HTTP. Por lo tanto, debemos comprobar el cédigo de estado nosotros
+pero no si la petición se realiza con éxito pero el servidor devuelve un código de
+estado de error HTTP. Por lo tanto, debemos comprobar el código de estado nosotros
 
 mismos:
 
@@ -5603,7 +5602,7 @@ peticion.
 
 4. Autorización: En tu API (Backend), verificas el token de autenticación y
 compruebas los permisos del usuario antes de procesar la peticidn. Siel token
-es invalido o el usuario no tiene los permisos necesarios, devuelves un cédigo
+es invalido o el usuario no tiene los permisos necesarios, devuelves un código
 de estado de error HTTP.
 
 Almacenamiento del token en el Web Storage
@@ -5708,7 +5707,7 @@ Soluciones de autenticacion y autorización de terceros
 Si bien puedes implementar tu propio sistema de autenticación y autorización,
 existen varias soluciones de terceros que pueden facilitarte la tarea. Estas
 soluciones proporcionan APIs y bibliotecas que puedes utilizar para autenticar y
-autorizar usuarios sin tener que escribir mucho cédigo.
+autorizar usuarios sin tener que escribir mucho código.
 
 Algunas de estas soluciones incluyen:
 
@@ -5793,7 +5792,7 @@ En este capitulo, aprenderemos técnicas y mejores practicas para mejorar el
 rendimiento de nuestras apps React. Desde la virtualización y paginación
 de listas hasta la memoización de componentes, el code splitting y el lazy
 loading, cada sección de este capitulo se centrard en una técnica especifica,
-proporcionandote la teoria y ejemplos de cédigo.
+proporcionandote la teoria y ejemplos de código.
 
 Si algun concepto te resulta particularmente desafiante, te recomiendo que sigas a
 joan León (@nucliweb) y a Estela Franco (@guaca). Ambos son personas expertas en
@@ -6077,25 +6076,25 @@ cuando sepas que hay un cuello de botella en el rendimiento y hayas medido que l
 memoización mejora la velocidad de tu app.
 Code Splitting y Lazy Loading
 
-La optimización del rendimiento no siempre implica hacer que el cédigo existente
+La optimización del rendimiento no siempre implica hacer que el código existente
 sea més eficiente. A veces, implica simplemente cambiar cuando y cémo se
-entrega ese cédigo. Dos técnicas muy efectivas para mejorar el rendimiento de las
+entrega ese código. Dos técnicas muy efectivas para mejorar el rendimiento de las
 apps web, en particular, son el code splitting y el lazy loading.
 
 Code Splitting
 
-El code splitting es el proceso de dividir el cédigo de tu app en multiples
+El code splitting es el proceso de dividir el código de tu app en multiples
 bundles (paquetes) que pueden ser cargados bajo demanda. Las herramientas
 modernas como Vite y Next.js, que son cada vez mas populares para la creación de
 apps React, tienen soporte incorporado para ello.
 
 Esto significa que cada vez que un usuario carga tu app, solo se esta
-descargando el cédigo necesario para la carga inicial de la pagina. El resto del
-cédigo se puede cargar bajo demanda segtin sea necesario, lo que puede mejorar
+descargando el código necesario para la carga inicial de la pagina. El resto del
+código se puede cargar bajo demanda segtin sea necesario, lo que puede mejorar
 significativamente los tiempos de carga, especialmente para apps grandes.
 
 Para Vite, la configuración de code splitting puede estar en el archivo
-vite.config. js. Vite divide automaticamente el cddigo cuando se utiliza
+vite.config. js. Vite divide automaticamente el código cuando se utiliza
 import () de forma dinamica.
 
 1 // vite.config.js
@@ -6114,7 +6113,7 @@ En este ejemplo, Vite creard dos bundles separados para main. js y nested. js.
 Cuando se visite la ruta correspondiente, solo se cargaré el bundle correspondiente.
 
 La app del code splitting puede tener un gran impacto en el rendimiento de
-tu app, permitióndote cargar solo el cédigo que es necesario, lo que mejora la
+tu app, permitióndote cargar solo el código que es necesario, lo que mejora la
 eficiencia y la experiencia del usuario.
 
 Lazy Loading
@@ -6182,7 +6181,7 @@ significativamente la eficiencia y la experiencia del usuario.
 Una nota adicional: React.1lazy() y <Suspense> no son atin 100%
 compatibles con la renderización en el lado del servidor (SSR). Para las
 bibliotecas que admiten SSR, puedes usar una solución mas tradicional como
-import () para dividir el cédigo.
+import () para dividir el código.
 
 Next, el framework de React esta empezando a implementarlo en sus tltimas
 versiones.
@@ -6345,7 +6344,7 @@ Conclusión
 En este capitulo, hemos profundizado en los conceptos de optimización y
 rendimiento en React. Hemos explorado cémo la paginación de listas puede ayudar
 a manejar grandes conjuntos de datos de manera eficiente, cémo la memoización
-puede prevenir renderizados innecesarios, y cémo la división de cédigo y el
+puede prevenir renderizados innecesarios, y cémo la división de código y el
 lazy loading pueden mejorar el tiempo de carga de nuestra app. Ademas,
 discutimos varias mejores practicas de rendimiento en React, como el uso eficiente
 del Contexto y Redux.
@@ -6356,7 +6355,7 @@ manera eficiente puede llevar a una mejor experiencia del usuario, y puede marca
 la diferencia en la percepción del usuario sobre la calidad de tu app.
 
 En el préximo capitulo, cambiaremos nuestra atención al testing de frontend. El
-testing es necesario para el dev de sw, que garantiza que tu cédigo
+testing es necesario para el dev de sw, que garantiza que tu código
 funcione como se espera y ayuda a prevenir bugs antes de que lleguen a producción.
 
 Capitulo 9: Pruebas y calidad del codigo
@@ -6364,12 +6363,12 @@ Capitulo 9: Pruebas y calidad del codigo
 Introducción al Testing
 
 El dev de sw es un proceso complejo y multifacético. No solo implica
-escribir cédigo que funcione, sino tambión asegurarse de que ese cédigo funcione
+escribir código que funcione, sino tambión asegurarse de que ese código funcione
 correctamente en todas las situaciones posibles. Aqui es donde entra en juego el
 testing o las pruebas de sw.
 
 Las pruebas de sw (tests) son una parte integral del ciclo de vida del dev
-de sw. Nos permiten verificar que nuestro cédigo hace lo que se supone
+de sw. Nos permiten verificar que nuestro código hace lo que se supone
 que debe hacer y nos ayudan a detectar y corregir errores antes de que lleguen a
 producción. En otras palabras, las pruebas nos ayudan a garantizar la calidad de
 nuestro sw.
@@ -6387,11 +6386,11 @@ Unit Tests
 Piramide del testing
 
 + Pruebas unitarias (Unit tests): Estas pruebas se centran en pequefias unidades
-de cédigo, como funciones o métodos individuales. El objetivo es asegurarse de
-que cada parte del cédigo funcione correctamente de forma aislada.
+de código, como funciones o métodos individuales. El objetivo es asegurarse de
+que cada parte del código funcione correctamente de forma aislada.
 
 + Pruebas de integración (Integration Tests): Estas pruebas se centran en c6mo
-diferentes partes del cédigo trabajan juntas. El objetivo es asegurarse de que el
+diferentes partes del código trabajan juntas. El objetivo es asegurarse de que el
 sistema, como un todo, funcione correctamente.
 
 - Pruebas de aceptación (Acceptance Tests): Estas pruebas se realizan desde la
@@ -6400,9 +6399,9 @@ requisitos especificados.
 
 En este capitulo, nos centraremos en las pruebas unitarias y de integración
 utilizando Jest y Vitest, las pruebas de componentes con React Testing Library, y
-cémo mantener nuestro cédigo limpio y de calidad con Eslint y Prettier. Tambión
+cémo mantener nuestro código limpio y de calidad con Eslint y Prettier. Tambión
 cubriremos cémo realizar un anilisis de cobertura de pruebas (Code Coverage)
-para asegurarnos de que todas las partes de nuestro cédigo estón adecuadamente
+para asegurarnos de que todas las partes de nuestro código estón adecuadamente
 
 probadas.
 
@@ -6451,7 +6450,7 @@ a)
 O => {
 
 Eneste ejemplo, test es una función global proporcionada por Jest que define una
-prueba. La función expect se utiliza para hacer afirmaciones sobre lo que el cédigo
+prueba. La función expect se utiliza para hacer afirmaciones sobre lo que el código
 deberia hacer, y .toBe() es un "matcher" que comprueba si el valor esperado
 coincide con el valor real.
 
@@ -6756,18 +6755,18 @@ screen. queryByText cuando esperamos que no lo esté.
 
 Estos son solo algunos ejemplos de lo que puedes hacer con React Testing Library. En
 el siguiente apartado, aprenderemos sobre Eslint y Prettier y como pueden ayudarte
-a mantener tu cédigo limpio y ordenado.
+a mantener tu código limpio y ordenado.
 ESlint y Prettier
 
-Mantener un cédigo limpio y bien formateado es esencial para la calidad del
-sw. No solo hace que el cddigo sea mas facil de leer y entender, sino que
+Mantener un código limpio y bien formateado es esencial para la calidad del
+sw. No solo hace que el código sea mas facil de leer y entender, sino que
 tambión puede ayudar a prevenir errores. Aqui es donde entran en juego ESlint y
 Prettier.
 
 ESlint
 
 ESlint es una herramienta de linting para JS. El "linting" es el proceso
-de analizar el cédigo en busca de posibles errores 0 problemas de estilo. ESlint
+de analizar el código en busca de posibles errores 0 problemas de estilo. ESlint
 viene con un conjunto de reglas predefinidas que puedes personalizar segiin tus
 necesidades. Tambión es extensible, lo que significa que puedes escribir tus propias
 reglas o utilizar plugins para afiadir mas funcionalidades.
@@ -6826,9 +6825,9 @@ desactiva la reglareact/prop-types.
 
 Prettier
 
-Prettier es una herramienta de formateo de cédigo para JS. A diferencia
-de Eslint, que se centra en la calidad del cédigo, Prett ier se centra en el estilo del
-cédigo. Prettier formatea tu cddigo de manera consistente y automatica, lo que
+Prettier es una herramienta de formateo de código para JS. A diferencia
+de Eslint, que se centra en la calidad del código, Prett ier se centra en el estilo del
+código. Prettier formatea tu código de manera consistente y automatica, lo que
 
 ayuda a mantener un estilo coherente en todo el proyecto.
 Para instalar Prettier en tu proyecto, puedes usar npm con el siguiente
@@ -6862,7 +6861,7 @@ Integración de Eslint y Prettier
 ESlint y Prettier pueden trabajar juntos para proporcionar una experiencia de
 
 dev mas fluida. Puedes configurar ESlint para que utilice Prettier como
-formateador de cédigo, y para que ignore las reglas de estilo que Prettier ya maneja.
+formateador de código, y para que ignore las reglas de estilo que Prettier ya maneja.
 
 Para hacer esto, primero necesitas instalar el plugin eslint-plugin-prettier
 y elconfigurador eslint-config-prettier:
@@ -6894,22 +6893,22 @@ desactivara las reglas de estilo que entran en conflicto con Prettier.
 
 Estas son solo algunas de las cosas que puedes hacer con ESlint y Prettier. En
 el siguiente apartado, aprenderemos sobre el andlisis de cobertura de pruebas y
-como puede ayudarte a asegurarte de que todas las partes de tu cédigo estón
+como puede ayudarte a asegurarte de que todas las partes de tu código estón
 adecuadamente probadas.
 Analisis de cobertura de pruebas
 
 El andlisis de cobertura de pruebas (Code Coverage) es una medida que nos ayuda a
 
-entender qué porcentaje de nuestro cddigo esta siendo probado o testeado.
+entender qué porcentaje de nuestro código esta siendo probado o testeado.
 La cobertura de pruebas se suele dividir en varias categorias:
 
-+ Cobertura de lineas: ;Qué porcentaje de las lineas de cédigo se han ejecutado
++ Cobertura de lineas: ;Qué porcentaje de las lineas de código se han ejecutado
 durante las pruebas?
 
 +Cobertura de funciones: :Qué porcentaje de las funciones se han llamado
 durante las pruebas?
 
--Cobertura de ramas: ;Qué porcentaje de las ramas del cédigo (como las
+-Cobertura de ramas: ;Qué porcentaje de las ramas del código (como las
 sentencias if y switch) se han ejecutado durante las pruebas?
 
 + Cobertura de sentencias: ;Qué porcentaje de las sentencias se han ejecutado
@@ -6956,7 +6955,7 @@ En este ejemplo, casi todas las lineas, funciones y ramas de MyComponent. js
 estan cubiertas por las pruebas, excepto la linea 42.
 
 Es importante recordar que la cobertura del 100% no siempre es necesaria, ni
-siquiera siempre es deseable. Algunas partes del cédigo pueden ser dificiles de
+siquiera siempre es deseable. Algunas partes del código pueden ser dificiles de
 probar, o pueden ser tan simples que las pruebas no aporten mucho valor. En lugar
 de apuntar a una cobertura del 100%, es mejor utilizar la cobertura de pruebas
 como una herramienta para identificar 4reas que podrian beneficiarse de mas
@@ -7086,18 +7085,18 @@ contenga la palabra "intro". Esto es util para comprobar que el enlace "Get star
 redirige a la pagina correcta.
 
 Con esto concluimos nuestro recorrido por el mundo del testing y la calidad del
-cédigo en React. Hemos aprendido sobre la importancia de las pruebas, como
+código en React. Hemos aprendido sobre la importancia de las pruebas, como
 implementar pruebas unitarias y de integración con Jest y Vitest, como probar
-componentes de React con React Testing Library, y como mantener nuestro cédigo
+componentes de React con React Testing Library, y como mantener nuestro código
 limpio y de alta calidad con Eslint y Prettier. Tambión hemos explorado cé6mo
 realizar un analisis de cobertura de pruebas para asegurarnos de que todas
-las partes de nuestro cédigo estón adecuadamente probadas. Finalmente, hemos
+las partes de nuestro código estón adecuadamente probadas. Finalmente, hemos
 introducido las pruebas de extremo a extremo con Cypress y Playwright, dos
 herramientas que nos permiten asegurarnos de que nuestra app funciona
 correctamente en su conjunto.
 Espero que este capitulo te haya proporcionado las herramientas y el conocimiento
-necesarios para escribir cédigo de buena calidad en React. Recuerda, un buen
-cédigo no es solo cédigo que funciona, sino cédigo que es facil de entender,
+necesarios para escribir código de buena calidad en React. Recuerda, un buen
+código no es solo código que funciona, sino código que es facil de entender,
 
 mantener y probar.
 
@@ -7152,7 +7151,7 @@ yeficiencia.
 
 En React (utilizando Vite), logramos esto con el comandonpm run build. Este
 comando genera una version de producción de tu aplicacion en el directorio build.
-Esta version ha sido minificada (el cédigo se comprime para reducir su tamajio) y
+Esta version ha sido minificada (el código se comprime para reducir su tamajio) y
 optimizada para el rendimiento.
 
 Aqui tienes un ejemplo de cémo se ve este proceso:
@@ -7173,8 +7172,8 @@ Diferencias entre el entorno de producción y el de dev
 En el entorno de dev, priorizamos la facilidad de depuración y la velocidad
 de dev. Por ejemplo, en React, el entorno de dev incluye mensajes
 de advertencia detallados para ayudarte a entender y corregir problemas en tu
-cédigo. Tambión se incluyen herramientas como "hot reloading", que actualiza
-automaticamente tu app en el navegador a medida que modificas el cédigo,
+código. Tambión se incluyen herramientas como "hot reloading", que actualiza
+automaticamente tu app en el navegador a medida que modificas el código,
 acelerando el ciclo de dev.
 
 En cambio, en el entorno de producción, la prioridad es la eficiencia y el
@@ -7185,10 +7184,10 @@ detalles de implementación que preferirias mantener privados. Por lo tanto, est
 caracteristicas se eliminan en la versión de producción.
 Minificación y su importancia
 
-La minificación es el proceso de eliminar todos los datos innecesarios de tu cédigo
+La minificación es el proceso de eliminar todos los datos innecesarios de tu código
 sin afectar su funcionalidad. Esto incluye espacios en blanco, comentarios, saltos
 de linea, y a veces, incluso los nombres de las variables se acortan. La minificación
-hace que tu cédigo sea mas dificil de leer para las personas, pero no afecta su
+hace que tu código sea mas dificil de leer para las personas, pero no afecta su
 interpretacion por parte de la maquina.
 
 La principal ventaja de la minificación es que reduce el tamajio de tus archivos
@@ -7197,7 +7196,7 @@ Esto puede tener un impacto significativo en el rendimiento de tu app,
 especialmente para los usuarios con conexiones a internet mas lentas.
 
 Ademis, la minificación puede ofrecer beneficios de seguridad, ya que hace que tu
-cédigo sea mas dificil de entender para alguien que intenta leerlo.
+código sea mas dificil de entender para alguien que intenta leerlo.
 Importancia de probar en el entorno de producción
 
 Como mencioné anteriormente, debido a estas diferencias entre los entornos de
@@ -7226,7 +7225,7 @@ Estas plataformas se encargan de la infraestructura y la gestión del servidor,
 permitióndonos centrarnos en el dev de nuestras apps. Ademas,
 ofrecen caracteristicas como la integración continua/despliegue continuo (CI/CD),
 que permiten desplegar automaticamente las apps cada vez que hacemos
-un push al repositorio de cédigo, y la posibilidad de revertir a versiones anteriores
+un push al repositorio de código, y la posibilidad de revertir a versiones anteriores
 de la aplicacin si algo sale mal.
 
 Ahora, vamos a ver cémo desplegar una app React en cada una de estas
@@ -7257,7 +7256,7 @@ build.
 $ npm run build
 Paso 2: Crear un repositorio Git
 
-Vercel utiliza Git para obtener el cddigo de tu app. Por lo tanto, necesitas
+Vercel utiliza Git para obtener el código de tu app. Por lo tanto, necesitas
 tener tu app en un repositorio Git. Si atin no has hecho esto, aqui te muestro
 
 cémo puedes hacerlo:
@@ -7336,7 +7335,7 @@ el directorio build.
 
 Paso 2: Crear un repositorio Git
 
-Netlify tambión utiliza Git para obtener el cédigo de tu app. Por lo tanto,
+Netlify tambión utiliza Git para obtener el código de tu app. Por lo tanto,
 necesitas tener tu app en un repositorio Git. Los pasos serfan similares al
 apartado con Vercel.
 
@@ -7558,7 +7557,7 @@ construir cosas.
 Referencias
 
 -Bank, J., Porcello, T., & Lerner, E. (2017). Learning React: Functional Web
-Development with React and Redux. O'Reilly Media.
+devel with React and Redux. O'Reilly Media.
 
 « Rauschmayer, A. (2018). JS for impatient programmers. Independently
 published.
@@ -7592,7 +7591,7 @@ adaptarlas a diferentes tamafios de ventana.
 
 En los capitulos finales, nos adentramos en el consumo de APIs y la comunicación
 con el servidor, aprendiendo cémo optimizar nuestras apps para obtener
-el maximo rendimiento y como garantizar la calidad de nuestro cédigo mediante
+el maximo rendimiento y como garantizar la calidad de nuestro código mediante
 pruebas y herramientas de mantenimiento.
 
 Finalmente, exploramos cémo preparar nuestras apps para su despliegue y
@@ -7608,7 +7607,7 @@ React Query, Redux Toolkit y otros elementos del ecosistema de React.
 
 Recuerda que la practica constante es esencial para perfeccionar tus habilidades
 en cualquier tecnologia. Desafiate a ti mismo creando proyectos que solucionen
-problemas reales, colabora en proyectos de cédigo abierto y mantente informado
+problemas reales, colabora en proyectos de código abierto y mantente informado
 sobre las tltimas tendencias y novedades en React y la comunidad de dev
 web.
 
