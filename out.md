@@ -13,6 +13,7 @@ Este es un libro de Leanpub. Leanpub anima a los autores y publicadoras con el p
 A mi hija, Aroa.
 Para que sea lo que ella quiera ser.
 
+```sh
 TOC
 
 Sobre el autor
@@ -102,17 +103,15 @@ Capitulo 10: Despliegue y Entornos de Producción
 Introducción
 Creación de un entorno de producción optimizado
 Referencias Despliegue en plataformas populares (Netlify, Vercel, Firebase...
-SEO y rendimiento en aplicaciones de React
+SEO y rendimiento en apps de React
 Referencias
 
 Epilogo
+```
 
 Sobre el autor
 
-Carlos Azaustre nacié en Madrid, Espafia, en 1984. Es Ingeniero en Telematica por
-la Universidad Carlos III de Madrid, con una década de experiencia alternando la
-Ingenieria de sw y como Developer Relations en empresas como Google, IBM
-Research y Eventbrite.
+Carlos Azaustre nacié en Madrid, Espafia, en 1984. Es Ingeniero en Telematica por la Universidad Carlos III de Madrid, con una década de experiencia alternando la Ingenieria de sw y como Developer Relations en empresas como Google, IBM Research y Eventbrite.
 
 Actualmente, Carlos comparte su experiencia en el campo del dev de sw como Profesor Asociado en la Universidad Europea de Madrid, impartiendo clases en el Master de dev Web. Siempre comprometido con la educación y la divulgación tecnoldégica, tambión dirige un popular canal de YouTube (https://youtube.com/@carlosazaustre) donde ha cultivado
 una comunidad de mas de 125,000 suscriptores. En su canal, aborda temas relacionados con la programación y el dev web con JS, proporcionando información valiosa y consejos practicos a su audiencia.
@@ -123,19 +122,19 @@ El trabajo de Carlos ha sido reconocido por empresas lideres en tecnologia: Goog
 
 Ahora, con el lanzamiento de su nuevo libro Aprendiendo React, Carlos busca compartir su conocimiento de esta popular biblioteca JS con un ptblico atin mds amplio, ayudando a los desarrolladores a aprovechar al maximo las funcionalidades de React en sus propios proyectos.
 
-Prefacio
+## Prefacio
 
-En el mundo del dev web de hoy, es importante mantenerse al tanto de las tendencias y tecnologias emergentes. Aqui entra React,js, una biblioteca JS creada por FB, que ha capturado la atención de la comunidad de desarrolladores en todo el mundo. Su naturaleza flexible y robusta la hace preferible para el dev de interfaces de usuario en aplicaciones web y de alto rendimiento.
+En el mundo del dev web de hoy, es importante mantenerse al tanto de las tendencias y tecnologias emergentes. Aqui entra React,js, una biblioteca JS creada por FB, que ha capturado la atención de la comunidad de desarrolladores en todo el mundo. Su naturaleza flexible y robusta la hace preferible para el dev de UIs en apps web y de alto rendimiento.
 
 A medida que avanza el tiempo, la popularidad de React ha crecido exponencialmente, y hasta 2023 ha demostrado ser una herramienta invaluable en el conjunto de herramientas de cualquier desarrollador. Con su creciente ecosistema de soluciones y proyectos de terceros, React ha seguido siendo una opción relevante y potente para desarrolladores frontend.
 
-Este libro esta destinado a programadores que ya estan familiarizados con JS y estan interesados en dar sus primeros pasos con React. El propésito es proporcionarte una guia sdlida y detallada que te ayude a comprender y dominar los conceptos clave de React. No sdlo aprenderas los fundamentos basicos, sino tambión las técnicas avanzadas y las mejores practicas que te permitiran escribir aplicaciones de React eficientes y de alto rendimiento.
+Este libro esta destinado a programadores que ya estan familiarizados con JS y estan interesados en dar sus primeros pasos con React. El propésito es proporcionarte una guia sdlida y detallada que te ayude a comprender y dominar los conceptos clave de React. No sdlo aprenderas los fundamentos basicos, sino tambión las técnicas avanzadas y las mejores practicas que te permitiran escribir apps de React eficientes y de alto rendimiento.
 
 Empezaremos con una introducción a React, explorando su historia, sus fortalezas y por qué tiene la atención de la comunidad de dev web. A continuación, nos sumergiremos en los fundamentos de React, incluyendo la configuración del entorno de dev, la sintaxis JSX, y cémo crear y estructurar un  proyecto. Tambión aprenderas sobre los componentes, el manejo de eventos, y las complejidades del ciclo de vida de los componentes y como React las maneja.
 
 A medida que avanzamos, exploraremos temas mas complejos como la gestión del estado global utilizando la API Context y Redux, enrutamiento con React Router, y como aplicar estilos y disefio en tus proyectos de React. En las etapas posteriores del libro, cubriremos cémo consumir APIs y comunicarse con un servidor, como optimizar el rendimiento de tu app de React, y cémo probar y mantener la calidad de tu cédigo.
 
-Por ultimo, te guiaré a través de los pasos para desplegar tus aplicaciones de React en un entorno de producción, y te proporcionaré consejos sobre SEO y rendimiento para asegurar que tus aplicaciones no sdlo funcionen bien, sino que tambión sean encontrables por los buscadores y accesibles.
+Por ultimo, te guiaré a través de los pasos para desplegar tus apps de React en un entorno de producción, y te proporcionaré consejos sobre SEO y rendimiento para asegurar que tus apps no sdlo funcionen bien, sino que tambión sean encontrables por los buscadores y accesibles.
 
 Al final de este libro, no sdlo tendras un conocimiento sdlido de React, sino que tambión habrds adquirido habilidades y conocimientos que te haran un mejor desarrollador.
 
@@ -145,9 +144,9 @@ A darle al código !
 
 *Carlos Azaustre*
 
-Capitulo 1: Introduccion a React
+## Capitulo 1: Introduccion a React
 
-Introduccion
+### Introduccion
 
 Biblioteca o libreria? técnicamente React es biblioteca; a menudo 'framework' por popularidad y cantidad de herramientas que lo rodean.
 
@@ -155,17 +154,17 @@ React -libreria- utiliza el LP JS. Desarrollado por Meta (antes FB) ha revolucio
 
 Desde lanzamiento en 2013, React ha ganado una inmensa popularidad debido a 
 
-¿Qué es React?
+**¿Qué es React?**
 
-Como se comenta en la introdución, React es una biblioteca de JS para construir interfaces de usuario. A diferencia de frameworks completos como por ejemplo Angular, React se centra en una sola cosa: la capa de vista. Esto significa que React se ocupa principalmente de lo que el usuario ve y cémo interacttia con su app.
+Como se comenta en la introdución, React es una biblioteca de JS para construir UIs. A diferencia de frameworks completos como por ejemplo Angular, React se centra en una sola cosa: la capa de vista. Esto significa que React se ocupa principalmente de lo que el usuario ve y cémo interacttia con su app.
 
-React introduce el concepto de componentes. Un componente en React es una pieza independiente de código que controla una parte de la interfaz de usuario. Estos componentes son reutilizables y pueden combinarse para formar aplicaciones completas.
+React introduce el concepto de componentes. Un componente en React es una pieza independiente de código que controla una parte de la interfaz de usuario. Estos componentes son reutilizables y pueden combinarse para formar apps completas.
 
-Historia de React
+**Historia de React**
 
-React fue creado por Jordan Walke, ingeniero de sw en FB, en 2011. Walke se inspiró en XHP, una biblioteca de PHP para la creación de componentes HTML, y queria llevar un enfoque similar a JS. El resultado fue una biblioteca que permitia a los desarrolladores construir interfaces de usuario dinamicas y eficientes con JS.
+React fue creado por Jordan Walke, ingeniero de sw en FB, en 2011. Walke se inspiró en XHP, una biblioteca de PHP para la creación de componentes HTML, y queria llevar un enfoque similar a JS. El resultado fue una biblioteca que permitia a los desarrolladores construir UIs dinamicas y eficientes con JS.
 
-El primer producto de FB que utilizé React fue el feed de noticias -2011-. El éxito de React en el “muro” llevó a FB a utilizarlo en mas productos, incluyendo Instagram, que FB adquiere en 2012.
+El primer producto de FB que utilizé React fue el feed de noticias -2011-. El éxito de React en el "muro" llevó a FB a utilizarlo en mas productos, incluyendo Instagram, que FB adquiere en 2012.
 
 FB decidié liberar React como proyecto de código abierto en mayo de 2013 durante la conferencia JSConf US. La decisión de hacer de React un proyecto open source fue motivada: Primero, FB queria compartir su enfoque innovador para la construcción de UIs con la comunidad de desarrolladores. Segundo, FB esperaba que al hacer de React un proyecto de código abierto, otros desarrolladores contribuirian a su dev y ayudarian a mejorar la biblioteca.
 
@@ -175,427 +174,281 @@ Esta cláusula provocṕ preocupación en la comunidad de dev, y algunas empresa
 
 Hoy React es una de las bibliotecas de JS mas populares para construcción de UIs. Es utilizado por muchas empresas grandes y pequefias (Netflix, Airbnb, Uber, NYT y la propia Meta) y tiene comunidad muy activa. React ha seguido evolucionado desde su lanzamiento en 2013, con nuevas caracteristicas y mejoras introducidas de forma regular.
 
-La Hª de React es un testimonio del poder de la innovación y la colaboración en la comunidad de dev de sw. A través de su enfoque en la eficiencia, la reutilización de componentes y la facilidad de uso, React ha cambiado la forma en que construimos y pensamos interfaces de usuario.
+La Hª de React es un testimonio del poder de la innovación y la colaboración en la comunidad de dev de sw. A través de su enfoque en la eficiencia, la reutilización de componentes y la facilidad de uso, React ha cambiado la forma en que construimos y pensamos UIs.
 
-¿Por qué usar React?
+**¿Por qué usar React?**
 
 React tiene varias ventajas que lo hacen atractivo para los desarrolladores. Algunas:
 
 - **Componentes reutilizables**: React se basa en componentes y son reutilizables: puedes escribir un componente una vez y reusarlo en diferentes partes de tu app. Esto ahorra tiempo y aumenta el orden.
 
 - **Virtual DOM**: React introduce este concepto: una representación ligera del DOM (Document Object Model) real. Cuando el estado de un componente cambia, React primero actualiza el Virtual DOM y luego compara la versión actualizada con la anterior. Luego, solo actualiza las
-partes del DOM real que necesiten cambiar. Es este proceso (“reconciliación”) lo que hace que React sea tan rapido.
+partes del DOM real que necesiten cambiar. Es este proceso ("reconciliación") lo que hace que React sea tan rapido.
 
 - **Unidireccionalidad de los datos**: React sigue un flujo de datos unidireccional: en una app React los datos fluyen desde componentes padres a componentes hijos. ,, seguimiento de
 cambios en el estado de la app mas facil. código mas predecible y facil de entender.
 
-- **Ecosistema y comunidad**: React tiene un ecosistema robusto y una comunidad activa. Hay una gran cantidad de bibliotecas de terceros disponibles que puedes usar para agregar funcionalidad a tus aplicaciones React. Ademas, si te encuentras con un problema, es probable que alguien mas ya haya encontrado una solución.
+- **Ecosistema y comunidad**: React tiene un ecosistema robusto y una comunidad activa. Hay una gran cantidad de bibliotecas de terceros disponibles que puedes usar para agregar funcionalidad a tus apps React. Ademas, si te encuentras con un problema, es probable que alguien mas ya haya encontrado una solución.
 
-Conclusión
+**Conclusión**
 
 React es una gran herramienta para construir UIs. Su enfoque en: *componentes reutilizables*, el *Virtual DOM* y el *flujo de datos unidireccional* lo hacen muy atractivo para nosotros como desarrolladores.
 
 profundizaremos en estos conceptos y aprenderemos a construir tus propias apps con React.
 
-Referencias
+**Referencias**
 
-+ Azaustre, C. (2021) Aprendiendo JS. Independently Published.
-
-«Banks, A., y Porcello, E. (2020). Learning React: Modern Patterns for Developing
-React Apps. O'Reilly Media.
-
++ Azaustre, C. (2021) Aprendiendo JS. Independently Published. «Banks, A., y Porcello, E. (2020). Learning React: Modern Patterns for Developing React Apps. O'Reilly Media.
 + Axel, R. (2018). JS: The Definitive Guide. O'Reilly Media.
++ FB Inc. (2013). React - A JS library for building user interfaces. GitHub. https://github.com/FB/react «Walke, J. (29 de mayo de 2013). React: Rethinking best practices. JsConf. https://2013.jsconf.eu/speakers/pete-hunt-react-rethinking-best-practices.html
++ Mardan, A. (2019). React.js For Beginners. RWieruch. _https://www.robinwieruch.de/react-hooks
++ Mozilla Developer Network. (2023). JS Guide. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JS/Guide
 
-+ FB Inc. (2013). React - A JS library for building user interfaces.
-GitHub. https://github.com/FB/react
+## Capitulo 2: Fundamentos de React
 
-«Walke, J. (29 de mayo de 2013). React: Rethinking best practices.
-JsConf. https://2013.jsconf.eu/speakers/ pete-hunt-react-rethinking-best-
-practices.html
+# Configuración del entorno de dev
 
-+Mardan, A. (2019). React.js For Beginners. RWieruch. _https://
-www.robinwieruch.de/react-hooks
+Este libro, aunque expliquemos la teoria, es bastante practico, por tanto tener preparado el entorno de trabajo necesario es esencial.
 
-+ Mozilla Developer Network. (2023). JS Guide. MDN Web Docs. https://
-developer.mozilla.org/en-US/docs/Web/JS/Guide
-
-Capitulo 2: Fundamentos de React
-Configuración del entorno de dev
-
-Este libro, aunque expliquemos la teoria, es bastante practico, por tanto tener
-
-preparado el entorno de trabajo necesario es esencial.
-
-Antes de comenzar a desarrollar aplicaciones con React, necesitaremos configurar
-nuestro entorno de dev. Esto implica instalar algunas herramientas y
-configurar algunas configuraciones en nuestro sistema. Aunque puede parecer un
-proceso complicado al principio, una vez que lo hayas hecho una vez, te resultara
-mis facil en el futuro.
+algunas herramientas y cosas a configurar cosas en el sistema. 
 
 Conocimientos Previos
 
-Aunque este libro no pretende que sepas y conozcas React, ya que el propésito
-del mismo es que lo aprendas después de leerlo, si que se necesita tener unos
-conocimientos basicos previos.
+Aunque este libro no pretende que sepas y conozcas React, ya que el propésito del mismo es que lo aprendas después de leerlo, si que se necesita tener unos conocimientos basicos previos.
 
-React es una herramienta potente y flexible, pero tambión puede ser compleja si no
-se tiene una base sdlida en ciertos conceptos y tecnologias.
+React es una herramienta potente y flexible, pero tambión puede ser compleja si no se tiene una base sdlida en ciertos conceptos y tecnologias.
 
-+ JS: React utiliza JS, por lo que un conocimiento sdlido de JS
-es esencial. Deberias estar comodo con los conceptos de JS moderno,
-como las funciones flecha (Arrow functions), las promesas, la desestructuración
-de objetos y arrays, y las clases. Tambión es util entender cémo funciona el
-modelo de eventos de JS, ya que React hace un uso intensivo de los
-mismos.
+- JS: React hace uso intensivo de JS's, Conocimiento de JS es esencial. Estar cómodo con conceptos JS modernos como:
+  - arrow functions
+  - promesas
+  - desestructuración de objetos y arrays
+  - clases.
+  - el modelo de eventos de JS 
 
-- HTML y CSS: React se utiliza para construir interfaces de usuario, por lo que
-un buen entendimiento de HTML y CSS es crucial. Deberias estar familiarizado
-con la estructura basica de un documento HTML, cémo se utilizan las etiquetas
-para definir la estructura y el contenido de una pagina, y cémo se utiliza CSS
-para estilizar ese contenido.
+- HTML y CSS: React se utiliza para construir UIs, por lo que un buen entendimiento de HTML y CSS es crucial. Deberias estar familiarizado con 
+  - estructura basica de un documento HTML, 
+  - uso de etiquetas para definir estructura y contenidos -de una pagina-,
+  - sudo de CSS para estilizar contenido.
 
--Node.js y npm: React se desarrolla y se gestiona a través de Node.js y NPM
-(Node Package Manager). Necesitaras un entendimiento basico de como instalar
-y usar paquetes npm, y como se utilizan las herramientas de linea de comandos
-de Nodejs. Aunque Node.js se emplea en sistemas Backend y creación de APIs
-REST, no necesitas tener ese conocimiento, ya que Node abarca mucho mas y se
-emplea tambión como herramienta de dev como veremos a lo largo del
-libro.
+- Node.js y npm: React se desarrolla y se gestiona a través de Node.js y NPM (Node Package Manager). Necesitaras un entendimiento basico de como instalar y usar paquetes npm, y como se utilizan las herramientas de linea de comandos
+de Nodejs. Aunque Node.js se emplea en sistemas Backend y creación de APIs REST, no necesitas tener ese 
+conocimiento, ya que Node abarca mucho mas y se emplea tb como herramienta de dev -lo veremos -
 
-+ ES6: React hace un uso intensivo de las caracteristicas de ES6 (la sexta versión
-de ECMAScript, la especificación que define JS). Deberias familiarizarte
-con las caracteristicas que hemos comentado anteriormente.
++ ES6: React hace un uso intensivo de las caracteristicas de ES6 (ECMAScript v6, especificación que define JS). 
+Deberias familiarizarte con las caracteristicas que hemos comentado anteriormente.
 
-Si te sientes a gusto con estos conceptos, estaras en una buena posición para
-empezar a trabajar con React. Si no es asi, te aconsejo dedicar un tiempo para
-familiarizarse con ellos antes de seguir adelante. Existen numerosos recursos
-disponibles en linea para aprender estos conceptos, y una inversión de tiempo en
-esta etapa puede resultar en un ahorro significativo de tiempo y frustración en el
-futuro.
+Si te sientes a gusto con estos conceptos, estaras en una buena posición para empezar a trabajar con React. Si no es asi, te aconsejo dedicar un tiempo para familiarizarse con ellos antes de seguir adelante. Existen numerosos recursos disponibles en linea para aprender estos conceptos, y una inversión de tiempo en esta etapa puede resultar en un ahorro significativo de tiempo y frustración en el futuro.
 
 Requerimientos
 
-+ Node.js (v16 0 v18 que es la mas reciente)
+- Node.js (v16 0 v18 que es la mas reciente)
 - NPM (ya viene con Node.js)
--Vite (Herramienta de Scaffolding o generador de archivos, directorios y
-condfiguraciones basicas)
-
+- Vite (Herramienta de Scaffolding o generador de archivos, directorios y condfiguraciones basicas)
 - Un navegador, con sus Developer Tools. Chrome, Firefox, ... el que prefieras
 
-«La extensión de React Developer Tools
+«La extensión de React Developer Tools 
 
-+El editor de texto o el IDE (Integrated Developer Enviroment: Entorno de
-dev Integrado) que prefieras. Yo utilizo VSCode, pero sirve cualquier otro
-(Atom, SublimeText, WebStorm, etc...).
++ El editor o IDE que prefieras. Yo utilizo VSCode, pero sirve cualquiera (Atom, SublimeText, WebStorm, etc...).
 
-Instalación de Node.js y npm
+### Instalación de Node.js y npm
 
-React es una biblioteca de JS, por lo que necesitaremos un entorno
-de JS para desarrollar nuestras aplicaciones. Node.js es un entorno de
-ejecución de JS que nos permite ejecutar JS en nuestro sistema.
-NPM (Node Package Manager) es un gestor de paquetes que viene con Node.js y nos
-permite instalar y administrar bibliotecas de JS.
+React es una biblioteca de JS, por lo que necesitaremos un entorno de JS para desarrollar nuestras apps. Node.js es un entorno de ejecución de JS que nos permite ejecutar JS en nuestro sistema. NPM (Node Package Manager) es un gestor de paquetes que viene con Node.js y nos permite instalar y administrar bibliotecas de JS.
 
-Node.js lo puedes instalar desde su pagina web. Dirigete a la web https: //
-node js.org y descarga la versión LTS (Long-Term Support: Versión de Soportada a
-largo plazo) o la mas actual. El instalador tambión instalara npm.
+Node.js lo puedes instalar desde su pagina web. Dirigete a la web https://node js.org y descarga la LTS o la latest.
+El instalador tambión instalara npm. 
 
 Node.js* isa JS runtime built on Chrome’s V8 JS engine.
-
 Node.js 18 is now available!
-
 Download for macOS (x64)
-
 Or have a look at the Long Term Support (LTS) schedule
-
 Pagina de descarga de Node,js
 
-Instalación de Vite
+### Instalación de Vite
 
-La herramienta que utilizaremos para hacer el setup del proyecto sera Vite.
+La herramienta *para hacer el setup del proyecto* sera Vite. Permite crear un proyecto de JS (Vanilla, con TypeScript, Vue, Svelte, React...), generar archivos y carpetasy un dev web srv para probarlo en local.
 
-Vite es una herramienta que te permite crear un proyecto de JS (Vanilla,
-con TypeScript, Vue, Svelte, React...), generar los archivos y carpetas necesarias, asi
-como un servidor web de dev para probarlo en local.
 Vite
 Next Generation
 Frontend Tooling
-
 Get ready for a development environment that can finally
 catch up with you.
-
 Why Vite? View on GitHub
 
 Pagina oficial del proyecto Vite
 
-En los siguientes capitulos veremos como instalarlo y ejecutarlo.
+En los siguientes capitulos veremos como instalarlo y ejecutarlo. 
 
-React Developer Tools
+### Instalación de React Developer Tools
 
-Este plugin o extension de navegador lo puedes enontrar aqui: https://github.com/
-FB/react-devtools/tree/v3
+Este plugin o extension de navegador lo puedes econtrar aqui: https://github.com/FB/react-devtools/tree/v3
 
-o en los diferentes marketplaces de los navegadores.
+o en los diferentes marketplaces de los navegadores; en la Chrome Store
 
-ome > Extensions > Reset Developer Tool
+Esta herramienta nos sera **muy util para depurar** nuestras apps web. Podremos inspeccionar el arbol de componentes de React, visualizar el estado y las props de los componentes, etc.
 
-React Developer Tools
-@ remrea
+En préximos apartados veremos como generar un proyecto de React, su estructura y primera aplicacion. Pero antes, veamos una caracteristica principal de la libreria:
 
-ee eH He 1371 | Developer Toots | 3:000.000+ vsers
-
-Extension React Developer Tools en la Chrome Store
-
-Esta herramienta nos sera muy util para depurar nuestras aplicaciones web.
-Podremos inspeccionar el arbol de componentes de React, visualizar el estado y las
-props de los componentes, etc.
-
-En préximos apartados veremos como generar un proyecto de React, su estructura
-y primera aplicacion. Pero antes, veamos una caracteristica principal de la libreria:
 JSX.
+
 JSX: Sintaxis de JS y XML
 
-éQué es JSX?
-
-Esta sintaxis especial que utiliza React, sirve para entre otras cosas, ahorrarnos
-
-tiempo y sobretodo proporcionarnos una mejor experiencia de dev.
+JSX es una sintaxis especial de marcado que utiliza React. Ahorra tiempo y ++devX.
 
 Aqui tienes un ejemplo de cémo se ve el cédigo JSX:
 
 1 const element = <h1>Hola, mundo</h1>;
 
-Aprimera vista, la impresión es que estamos escribiendo codigo HTML y lo estamos
-mezclando dentro del cédigo JS, algo que es una muy mala practica y que no
+Aprimera vista, la impresión es que estamos escribiendo codigo HTML y lo estamos mezclando dentro del cédigo JS, algo que es una muy mala practica y que no
 se deberia hacer.
 
-Pero esto no es asi. Esta sintaxis parecida a HTML es en realidad codigo JS,
-bueno, realmente cddigo JSX que se traduce en JS. Tambión tiene algunas
-diferencias clave que debes tener en cuenta. Por ejemplo, debido a que class1 es
-una palabra reservada en JS, debes usar className en lugar de class
+Pero esto no es asi. Esta sintaxis parecida a HTML es en realidad codigo JS, bueno, realmente cddigo JSX que se traduce en JS. Tambión tiene algunas
+diferencias clave que debes tener en cuenta. Por ejemplo, debido a que class1 es una palabra reservada en JS, debes usar className en lugar de class
 para asignar una clase CSS a un elemento.
 
-éPor qué usar JSX?
+¿Por qué usar JSX?
 
-JSX tiene varias ventajas que lo hacen util para desarrollar interfaces de usuario con
-React:
+JSX tiene varias ventajas que lo hacen util para desarrollar UIs con React:
 
-+Legibilidad: El cddigo JSX se parece mucho al HTML, lo que hace que sea
-facil de leer y entender. Esto es especialmente util cuando estds desarrollando
-interfaces de usuario complejas con muchos elementos y componentes.
++ Legibilidad: El cddigo JSX se parece mucho al HTML, lo que hace que sea facil de leer y entender. Esto es especialmente util cuando estds desarrollando
+UIs complejas con muchos elementos y componentes.
 
-+ Potencia de JS: Aunque el cédigo JSX se parece a HTML, tiene todo el
-poder de JS detras de él. Puedes insertar cualquier expresión JS
-valida dentro de llaves {} en tu cédigo JSX.
++ Potencia de JS: Aunque el cédigo JSX se parece a HTML, tiene todo el poder de JS detras de él. Puedes insertar cualquier expresión JS valida dentro de llaves {} en tu cédigo JSX.
 
-+ Optimizacion de rendimiento: Las herramientas de compilación como Babel
-transforman el cédigo JSX en llamadas a React. createElement, que es una
++ Optimizacion de rendimiento: Las herramientas de compilación como Babel transforman el cédigo JSX en llamadas a React. createElement, que es una
 forma eficiente de crear elementos de React.
 
 Uso de JSX en React
 
-éPor qué hacemos esto? Basicamente, React, a diferencia de otras bibliotecas como
-Vue o frameworks como Angular, utiliza JS para todo. Para renderizar el
-codigo HTML, para manegjar la légica e incluso tambien para manejar estilos. Por
-tanto, cuando estamos componiendo la plantilla HTML que tendra un componente,
-en lugar de usar templating como en los otros recursos que hemos mencionado,
-utilizamos JS.
+¿Por qué hacemos esto? Basicamente, React, a diferencia de otras bibliotecas (como Vue) o frameworks (como Angular), utiliza **JS para todo**: renderizar el codigo HTML, manejar la lógica e incluso estilos. Por tanto, cuando estamos componiendo la plantilla HTML que tendra un componente, en lugar de usar templating como en los otros recursos que hemos mencionado, utilizamos JS.
 
-Esto complicaria mucho la escritura y sobre todo la lectura del cdédigo
-implementado. La forma mas facil de entender esto es usando el transpilador online
-de Babel.
+Esto complicaria mucho la escritura/lectura del código. La forma mas facil de entender esto es usando el **transpilador online de Babel**.
 
-Babel es una biblioteca de JS que nos permite usar las Ultimas novedades
-que incorporan las versiones mas recientes de JS antes de que estas sean
-implementadas en el navegador. Entre ellas la sintaxis JSX que transpila el cddigo a
-una version que actualmente entiendan los navegadores.
-Esta biblioteca no hay que instalarla manulamente, ya que diversas herramientas
-de hoy en dia como Vite, create-react-app o create-next-app ya las
+Babel es una biblioteca de JS que permite usar las ultimas novedades que incorporan las versiones mas recientes de JS antes de que sean implementadas en el navegador. 
+(Entre ellas la sintaxis JSX que transpila el cddigo a una version que actualmente entiendan los navegadores. )
+Esta biblioteca no hay que instalarla manulamente, ya que diversas herramientas de hoy en dia como Vite, create-react-app o create-next-app ya las incorporan y es una cosa menos a la hora de empezar a trabajar con React.
 
-incorporan y es una cosa menos a la hora de empezar a trabajar con React.
+Este proyecto tiene una herramienta online que nos permite ver como se traduce -transpila- el código y comprobar su version en el navegador.
 
-Este proyecto tiene una herramienta online que nos permite ver como se traduce 0
-
-transpila el cidigo y comprobar su version en el navegador.
-
-Dirigete a la siguiente pagina web: https://babeljs.io/repl y asegurate que esta
-marcada la opción del preset “react”.
+Ve a https://babeljs.io/repl y asegurate que esta marcada la opción del preset "react".
 
 Herramienta web Babel para transpilacion a JS
 
 Ahora vamos a probar a escribir cédigo JSX, por ejemplo el siguiente:
 
-1 <div>
-2 <h1>Hola mundo</h1>
-3 </div>
+<div>
+    <h1>Hola mundo</h1>
+</div>
 
 Este es el resultado que nos arroja el intérprete:
 
 1 "use strict
-
 5 React.createElement("div", null,
 4 React.createElement("hi", null, "Hola mundo")
 5s
 
-Vamos a explicarlo. La herramienta ha traducido o transpilado el cédigo JSX
-a cédigo JS. Cada elemento “HTML” se ha sustituido por la función
+Vamos a explicarlo. La herramienta ha traducido o transpilado el cédigo JSX a cédigo JS. Cada elemento "HTML" se ha sustituido por la función React.createElement(), propia de la biblioteca React. Esta funcidn, como su propio nombre indica, crea un elemento de HTML. Recibe 3 parametros:
 
-React. createElement propia de la biblioteca React.
+- el elemento a crear,
+- un objeto con propiedades (clases, atributos o props) y
+- una lista de elementos hijos.
 
-Esta funcidn, como su propio nombre indica, crea un elemento de HTML. Recibe 3
-parametros:
+Parece facil y que no hay necesidad de usar JSX, podemos escribir el cédigo en JS puro. Bueno, vamos a complicar un poco mis el cdigo JSX:
 
-+ Elelemento a crear,
-+ Un objeto con propiedades (clases, atributos o props)
-- Yuna lista de elementos hijos.
+<div class="header">
+<hi class="header__title">Hola mundo</h1>
+<button onclick="open" class="header__button">Menu</button>
+<a href="/about" class="header__link">Sobre mi</a>
+</div>
 
-Parece facil y que no hay necesidad de usar JSX, podemos escribir el cédigo en
+Este es el código que tendriamos que escribir si lo hicieramos en JS plano:
 
-JS puro. Bueno, vamos a complicar un poco mis el cdigo JSX:
-
-1 <div class="header">
-2 <hi class="header__title">Hola mundo</h1>
-3 <button onclick="open" class="header__button">Menu</
-button>
-
-4 <a href="/about" class="header__link">Sobre mi</a>
-
-5 </div>
-
-Este es el cédigo que tendriamos que escribir si lo hicieramos en JS plano:
-
-1 “use strict";
-
-3 React.createElement("div", {
-
-4 class: "header"
-
-5 3,
-
-6 React.createElement("hi", {
-
-7 class: "header_title"
-
-8 3,
-
-9 "Hola mundo"
-
-10 »
-
-11 React.createElement("button", {
-12 onclick: "open",
-
-43 class: "header__button"
-14 3,
-
-15 "Menu"
-
-16 >
-
-17 React.createElement("a", {
-
-18 href: "/about",
-
-19 class: "header__link"
-20 },
+```js
+"use strict";
+React.createElement("div", {
+class: "header"
+3,
+React.createElement("hi", {
+class: "header_title"
+3,
+"Hola mundo"
+ »
+ React.createElement("button", {
+ onclick: "open",
+ class: "header__button"
+3,
+"Menu"
+>
+React.createElement("a", {
+href: "/about",
+class: "header__link"
+},
+```
 
 "Sobre mi"
 
-eCémo lo ves? Se podria hacer, pero ¢Te resulta practico? ¢Es legible? Personalmente
-prefiero JSX para codificar el templating de mis componentes, si no es muy dificil de
-mantener y afiadir o cambiar elementos con el paso del tiempo.
+¿como se ve? se podria hacer, pero no es nada practico ¿es legible? Personalmente prefiero JSX para codificar el templating de mis componentes (si no, es muy dificil de
+mantener y afiadir o cambiar elementos con el paso del tiempo.)
 
-Es comprensible que si llevas tiempo en el mundo del dev web, te “eche un
-poco para atras” el tener que escribir algo que parece HTML en cidigo JS. No
-te preocupes, yo pensaba lo mismo y fue una de las causas por las que en un inicio
-rechazaba a React.
+Es comprensible que si llevas tiempo en el mundo del dev web, te "eche un poco para atras" el tener que escribir algo que parece HTML en cidigo JS. No te preocupes, yo pensaba lo mismo y fue una de las causas por las que en un inicio rechazaba a React.
 
-Pero una vez se ve el punto, que realmente es JS y que es para facilitarnos la
+Pero una vez se ve el punto, que realmente es JS y que es para facilitarnos la vida como desarrolladores, me cambié el chip.
 
-vida como desarrolladores, me cambié el chip.
+No todo el cédigo que vas a emplear en React es JSX. En React lo que mas vas a usar es JS. y Vanilla. React sdlo aporta ciertos métodos y estructura, pero practicamente todo el cédigo que escribirds es JS. JSX sdlo se utiliza para el maquetado o plantilla que tendran tus componentes. Pero no te preocupes que vamos air viendo todo esto.
 
-Por supuesto, no todo el cédigo que vas a emplear en React es JSX. En React lo
-que mas vas a usar es JS. y Vanilla. React sdlo aporta ciertos métodos y
-estructura, pero practicamente todo el cédigo que escribirds es JS. JSX sdlo se utiliza
-para el maquetado o plantilla que tendran tus componentes. Pero no te preocupes
-que vamos air viendo todo esto.
 Creación de un proyecto de React
 
 Setup del proyecto con Vite
 
-Ya hemos visto JSX que es una de las tecnologias o caracteristicas que distinguen
-a React y ahora podemos ponernos manos a la obra a crear lo que seria nuestra
+Ya hemos visto JSX que es una de las tecnologias o caracteristicas que distinguen a React y ahora podemos ponernos manos a la obra a crear lo que seria nuestra
 primera app web con esta biblioteca.
 
-No vamos a hacer nada del otro mundo, simplemente algo muy sencillo pero a la
-vez necesario para entender el flujo de la programación, las herramientas y diversas
-cosas a tener en cuenta que la primera vez pueden ser un poco liosas, pero luego ya
-se hacen de forma sistématica y dejamos de tenerlas en cuenta.
+No vamos a hacer nada del otro mundo, simplemente algo muy sencillo pero a la vez necesario para entender el flujo de la programación, las herramientas y diversas
+cosas a tener en cuenta que la primera vez pueden ser un poco liosas, pero luego ya se hacen de forma sistématica y dejamos de tenerlas en cuenta.
 
-Hay diversas formas de crear una app con React desde cero. Ninguna es mejor
-ni peor, inicamente cambia la forma de configurar todo antes de empezar.
+Hay diversas formas de crear una app con React desde cero. Ninguna es mejor ni peor, inicamente cambia la forma de configurar todo antes de empezar.
 
-Podemos hacerlo de forma “manual”, para ello necesitariamos instalar y configurar
-Webpack u otra herramienta de empaquetado y transpilación de cddigo JSX y
-JS moderno a cédigo comprensible por el navegador, ademas de varios
-plugins para que esto funcione correctamente y por supuesto, las bibliotecas o
-paquetes react y react -dom necesarias para poder utilizar sus funciones.
+Podemos hacerlo de forma "manual", para ello necesitariamos instalar y configurar Webpack u otra herramienta de empaquetado y transpilación de cddigo JSX y JS moderno a cédigo comprensible por el navegador, ademas de varios plugins para que esto funcione correctamente y por supuesto, las bibliotecas o paquetes react y react -dom necesarias para poder utilizar sus funciones.
 
-Puede ser interesante de hacer esto si quieres comprender “la magia” detras de las
-herramientas actuales, pero hoy en dia, en mi opinion, si es tu primera vez en este
-ecosistema de dev web con React, son mas trabas y frustaciones a llevarse,
-que arrancar con algo mas configurado por defecto y que te permite centrarte en
-aprender la librerfa y forma de trabajar con ella.
+Puede ser interesante de hacer esto si quieres comprender "la magia" detras de las herramientas actuales, pero hoy en dia, en mi opinion, si es tu primera vez en este
+ecosistema de dev web con React, son mas trabas y frustaciones a llevarse, que arrancar con algo mas configurado por defecto y que te permite centrarte en aprender la librerfa y forma de trabajar con ella.
 
-Por ello existen 3 alternativas. El propio equipo de React creé create-react-
-app una herramienta de scaffolding que te instala todo lo necesario y genera la
-estructura de archivos y carpetas de un “Hola Mundo” con React que hoy dia ya se
-encuentra deprecada.
+Por ello existen 3 alternativas. 
 
-Otra muy extendida es create -next - app creada por el equipo detras de Next.js,
-un framework basado en React pero que se escapa del ambito de este libro.
+1. **`create-react-app`**, del propio equipo de React, un scaffolder que instala todo lo necesario y genera la estructura de archivos/carpetas de un "Hola Mundo" React. Deprecada.
 
-Y por ultimo tenemos a Vite, una herramienta muy veloz que hace lo mismo
-que create-react - app pero utilizando ESBuild en lugar de Webpack para el
-empaquetado, reduciendo asi los tiempos de transpilación, y tambión es multi-
-libreria. No solo sirve para React, sino tambión para Vue, Svelte, Lit incluso Vanilla
-JS, y sus versiones con TypeScript.
+2. **`create-next-app`** creada por el equipo de Next.js, un **framework basado en React** que escapa del ambito de este libro. Muy extendida.
 
-En este momento es la herramienta mas popular y que mejores valoraciones tiene
-segun la ultima encuesta sobre el “Estado de JS” y vaa ser la que utilicemos
+3. **Vite**: muy veloz, hace lo mismo que create-react-app pero utilizando ESBuild en lugar de Webpack para el empaquetado, reduciendo asi los tiempos de transpilación, y tb multi-libreria. No solo sirve para React; tb para Vue, Svelte, Lit incluso Vanilla JS, y sus versiones con TypeScript.
 
-en este libro. De esta manera pondremos todas nuestras energias en React dejando
-de un lado configuraciones tediosas.
+En este momento es la herramienta mas popular y que mejores valoraciones tiene segun la ultima encuesta sobre el "Estado de JS" y vaa ser la que utilicemos 
+en este libro. De esta manera pondremos todas nuestras energias en React dejando de un lado configuraciones tediosas.
+
+
+```sh
 3 vue
-
 RATIOS OVER TIME vonne peace
-
 6 lit
 svelte
-
 Elegimos la variante sin TypeScript
-
 ? Select a variant: >» - Use arrow-keys. Return to submit.
 2» react
 react-ts
+```
 
-Y ya sdlo tenemos que ir al directorio que se acaba de crear y ejecutar los comandos
-que nos indica para que se instalen las dependencias y se ejecute el cédigo en un
+Y ya sdlo tenemos que ir al directorio que se acaba de crear y ejecutar los comandos que nos indica para que se instalen las dependencias y se ejecute el cédigo en un
 servidor de dev local:
 
 Encuesta del Estado de JS 2022
 av Select a framework: > react
-
 v Select a variant: >» react
-Para poder usar Vite, necesitamos tener Node.js instalado como dijimos en 3
-el capitulo donde comentabamos el entorno de dev. Si ya lo tienes, 4 Scaffolding project in /Users/carlosazaustre/Books/react-
-practico\
+
+3 
+Para poder usar Vite, necesitamos tener Node.js instalado como dijimos en el capitulo donde comentabamos el entorno de dev. Si ya lo tienes, 4 Scaffolding project in /Users/carlosazaustre/Books/react-practico\
 /code/my-app.
 
 simplemente has de correr el siguiente comando en la terminal:
 
 1 $ npm create vite@latest my-app > Done. Now run:
-
 cd my-app
 10 mpm install
 npm run dev
@@ -604,24 +457,19 @@ Seleccionamos la opción de React:
 
 1? Select a framework: > - Use arrow-keys. Return to submit.
 vanilla
-Al ejecutar el comando de dev, si vamos a nuestro navegador a la URL
-http://localhost:5173 (0 el puerto en el que esté corriendo) veremos lo
-siguiente:
+Al ejecutar el comando de dev, si vamos a nuestro navegador a la URL http://localhost:5173 (0 el puerto en el que esté corriendo) veremos lo siguiente:
 
 Hello Vite + React!
 
 Edit App. j Sx and save to test HMR updates.
 
-Hola Mundo con React y Vite
+### Hola Mundo con React y Vite
 
-Nuestro primer “Hola Mundo” con React! Con un logo en SVG rotando, un poco de
-texto y un boton con un contador para probar estados y eventos.
+Nuestro primer "Hola Mundo" con React! Con un logo en SVG rotando, un poco de texto y un boton con un contador para probar estados y eventos. 
 
 Estructura de archivos y carpetas
 
-Pasemos a ver que cédigo nos generé. Esta es la estructura de archivos y carpetas si
-
-abrimos nuestro editor de cédigo:
+Pasemos a ver que cédigo nos generé. Esta es la estructura de archivos y carpetas si abrimos nuestro editor de cédigo:
 
 1 - node_modules
 2 - sre
@@ -638,158 +486,109 @@ abrimos nuestro editor de cédigo:
 - package. json
 , - vite.config.js
 
-Parecen muchos archivos pero en realidad no son tantos. Te paso a comentar cada
-uno de ellos:
+Parecen muchos archivos pero en realidad no son tantos. Te paso a comentar cada uno de ellos:
 
 node_modules
 
-Este directorio alberga todos los paquetes que estan instalados, como react y
-react-domyasu vez todos los que dependan de ellos. Es una carpeta que debemos
-tener apuntada en nuestro fichero . git ignore para evitar que se suba a nuestro
-repositorio. ¢Por qué? pues, entre otras cosas, porque ocupan mucho espacio y
-gracias al fichero package. json siempre tendremos el registro de cudles y qué
-versiones son.
-package.json
+Este directorio alberga todos los paquetes que estan instalados, como react y react-domyasu vez todos los que dependan de ellos. Es una carpeta que debemos
+tener apuntada en nuestro fichero . git ignore para evitar que se suba a nuestro repositorio. ¢Por qué? pues, entre otras cosas, porque ocupan mucho espacio y
+gracias al fichero package. json siempre tendremos el registro de cudles y qué versiones son.
 
-Este fichero es el manifiesto de nuestra app. Contiene algo de metadata, las
-dependencias que usamos en el proyecto, asi como las dependencias de dev.
-Tambión tiene los alias para ejecutar ciertos scripts:
+`package.json`
+
+Este fichero es el manifiesto de nuestra app. Contiene algo de metadata, las dependencias que usa (en run y en dev) Tb los alias para ejecutar scripts:
 
 af
 
 2 "name": "my-app",
-
-3 “private”: true,
-
+3 "private": true,
 4 "version": "0.0.0",
-
 "module",
-
 {
 "vite",
-“vite build",
-"“eslint sre --ext js,jsx --report-unused-disable-
+"vite build",
+""eslint sre --ext js,jsx --report-unused-disable-
 
-dire\
-
-10 ctives --max-warnings 0",
+directives --max-warnings 0",
 
 14 "preview": "vite preview"
 
 12},
 
-13. "dependencies": {
+1.  "dependencies": {
 
 14 "react": "18.2.0",
-
-45 "“react-dom": "*18.2.0"
-
+15 ""react-dom": "*18.2.0"
 16},
-
-17 “devDependencies": {
-
+17 "devDependencies": {
 18 "@types/react": "*18.0.37",
-
 19 "@types/react-dom": "18.0.11",
 20 "@vitejs/plugin-react": "*4.0.0",
+22 "eslint-plugin-react": "*7.32.2",
+23 "eslint-plugin-react-hooks":
 24 "eslint": "8.38.0",
-
-22 “eslint-plugin-react": "*7.32.2",
-
-23 “eslint-plugin-react-hooks":
 
 "44.6.0",
 "40.3.4",
 
 slint-plugin-react-refresh":
-
 vite 4.3.9"
 
-El script dev ejecuta un servidor local de dev para probar nuestra app
-en el navegador e incorpora hot reloading. Esto quiere decir que a cada cambio que
-hagamos en nuestro cédigo, se vera reflejado en el navegador inmediatamente sin
-necesidad de tener que recargarlo manualmente.
+El script dev ejecuta un servidor local de dev para probar nuestra app en el navegador e incorpora hot reloading. Esto quiere decir que a cada cambio que hagamos en nuestro cédigo, se vera reflejado en el navegador inmediatamente sin necesidad de tener que recargarlo manualmente.
 
-El script build prepara nuestro cédigo para ser desplegado en un entorno de
+El script build prepara nuestro cédigo para ser desplegado en un entorno de producción.
 
-producción.
+preview ejecuta un servidor local pero el cédigo que emplea para ello es el cddigo ya listo para producción.
 
-preview ejecuta un servidor local pero el cédigo que emplea para ello es el cddigo
-ya listo para producción.
-
-Y por ultimo lint ejecuta el linter para verificar que nuestro cédigo sigue las
-normas de estilo especificadas en el ficheroeslintre.cjs.
+Y por ultimo lint ejecuta el linter para verificar que nuestro cédigo sigue las normas de estilo especificadas en el ficheroeslintre.cjs.
 
 vite.config.js
 
-Este fichero contiene la configuración de Vite y de las herramientas de dev.
-Es muy sencillo y practicamente no hay que tocar nada a no ser que quieras algo
-mis especifico. Con su Zero-Config, Vite ya esta listo para ser usado. Y como en el
-menu de la terminal, cuando estabamos creando el proyecto, elegimos la opción
-de react, esta ya incorpora los plugins necesarios para entender JSX y JS
-moderno.
+Este fichero contiene la configuración de Vite y de las herramientas de dev. Es muy sencillo y practicamente no hay que tocar nada a no ser que quieras algo
+mis especifico. Con su Zero-Config, Vite ya esta listo para ser usado. Y como en el menu de la terminal, cuando estabamos creando el proyecto, elegimos la opción
+de react, esta ya incorpora los plugins necesarios para entender JSX y JS moderno.
+
 1 import { defineConfig } from ‘vite’
 2 import react from '@vitejs/plugin-react'
-
 4 // https://vitejs.dev/config/
-
 5 export default defineConfig({
 6 plugins: [react()],
 
 index.HTML.
 
-El fichero index.htm] es el unico documento HTML que tendremos como cédigo
-fuente. Silo abres verds que es sumamente sencillo
+El fichero index.htm es el unico documento HTML que tendremos como fuente. Es sumamente sencillo
 
 1 <!DOCTYPE htm1>
 2 <html lang="en">
-
 3 <head>
 4 <meta charset="UIF-8" />
-
 5 <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 6 <meta name="viewport" content="width=device-width,
 
 initial-sc\
 
 7 ale=1.0" />
-
 8 <title>Vite + React</title>
-
 9 </head>
-
 10 <body>
-
 11 <div id="root"></div>
-
 12 <script type="module" src="/sre/main. jsx"></script>
-
-13. </body>
-
+13 </body>
 14 </htm1>
 
-Tiene algunas etiquetas de metadatos en el elemento head y en el body sdlo hay un
-div con el id root que sera donde se incruste o renderice toda nuestra app
+Tiene algunas etiquetas de metadatos en el elemento `head` y en el `body` sólo hay un `div` con el `id root` que sera donde se incruste o renderice toda nuestra app gracias a React.
 
-gracias a React.
+Para que funcione, necesitamos incorportar el fichero de entrada de la app en JS, que es el main. jsx que se encuentra en la carpeta src. Los afiadimos como script al HTML y le indicamos que sera de tipo médulo para poder utilizar los ESModules e imports que JS introdujo en su version ES6.
 
-Para que funcione, necesitamos incorportar el fichero de entrada de la app en
-JS, que es el main. jsx que se encuentra en la carpeta src. Los afiadimos
-como script al HTML y le indicamos que sera de tipo médulo para poder utilizar
-los ESModules e imports que JS introdujo en su version ES6.
+`src/`
 
-src
+Esta es la carpeta que alberga todo el cédigo fuente de nuestra app. Verds que hay varios archivos pero los que nos interesan son el main. jsx y el App. jsx. El
+resto son ficheros de estilos css y algunas imagenes. 
 
-Esta es la carpeta que alberga todo el cédigo fuente de nuestra app. Verds que
-hay varios archivos pero los que nos interesan son el main. jsx y el App. jsx. El
-resto son ficheros de estilos css y algunas imagenes.
+`main.JSX`
 
-main.JSX
-
-El fichero principal de la app. Si te das cuenta, tiene extensión JSX. Puedes
-usar la extension . js, va a funcionar igual, aunque por convención, si el fichero es
-un componente de React y/o utiliza cédigo JSX lo ideal es que lo nombremos como
-tal.
+El fichero principal de la app. Si te das cuenta, tiene extensión JSX. Puedes usar la extension . js, va a funcionar igual, aunque por convención, si el fichero es
+un componente de React y/o utiliza cédigo JSX lo ideal es que lo nombremos como tal.
 
 Ademis si utilizas un theme en tu editor para mostrar iconos diferentes segtin el
 
@@ -906,7 +705,7 @@ React como biblioteca para proyectos frontend. Las clases hacian la app mas
 pesada y no toda la gente entendia bien su funcionamiento y sintaxis. Actualmente,
 con los Hooks, se elimina esa duda de cuando usar funciones o cuando usar clases.
 
-Las aplicaciones han reducido su peso y performance al no usar clases.
+Las apps han reducido su peso y performance al no usar clases.
 
 Dentro de la función, lo ultimo que se hace es devolver la plantilla, simplemente con
 un return y el cédigo JSX que represente el componente. Aqui recuerda siempre
@@ -934,7 +733,7 @@ el componente.
 
 Esta es una de las bases fundamentales de React. Es una biblioteca reactiva y
 eso significa que a cada cambio que hagamos en la información y estado del
-componente, React se encargard de volver a renderizar o “repintar” la plantilla con
+componente, React se encargard de volver a renderizar o "repintar" la plantilla con
 esos nuevos datos y asi se vera reflejado en el DOM.
 
 Estos dos elementos que nos devuelve en array el hook de useState puedes
@@ -972,7 +771,7 @@ como un manejador. Te muestro el cédigo:
 7 </button>
 8 (/* 22. */3
 
-Y esto seria basicamente lo que haria nuestra app “Hola Mundo con React”.
+Y esto seria basicamente lo que haria nuestra app "Hola Mundo con React".
 Puedes ejecutarla de nuevo con el comando npm run dev y probarla en el
 navegador. Cuando hagas clic en el botón y veas que el valor cambia, comprenderas
 cémo esta funcionando el cdigo que hemos visto.
@@ -1074,7 +873,7 @@ Props y Estado en los componentes
 En este apartado, vamos a explorar dos conceptos fundamentales en React: las
 propiedades (props) y el estado (state). Estos son los dos tipos principales de datos
 que los componentes de React manejan y manipulan. Comprender cémo funcionan
-y como se utilizan es clave para desarrollar aplicaciones con React.
+y como se utilizan es clave para desarrollar apps con React.
 
 Propiedades (Props)
 
@@ -1097,7 +896,7 @@ Mundo" />;
 Eneste ejemplo, el componente Saludo recibe una prop llamada nombre.
 
 Cuando se utiliza el componente Saludo en el componente App, le pasamos la
-prop nombre con el valor “Mundo”. El resultado es que la app muestra “Hola,
+prop nombre con el valor "Mundo". El resultado es que la app muestra "Hola,
 
 Mundo’ en el navegador.
 
@@ -1112,7 +911,7 @@ que acepta una prop nombre, puedes pasarle esa prop de la siguiente manera:
 
 1 <Usuario nombre="Carlos" />
 
-En este caso, “Carlos” es el valor de la prop nombre que se pasa al componente
+En este caso, "Carlos" es el valor de la prop nombre que se pasa al componente
 Usuario.
 
 Accediendo a Props
@@ -1138,7 +937,7 @@ props. Esto se puede hacer utilizando defau1tProps. Por ejemplo:
 745
 
 En este caso, si el componente Usuario se utiliza sin pasarle una prop nombre,
-utilizara “Desconocido” como valor por defecto.
+utilizara "Desconocido" como valor por defecto.
 
 Aunque esta forma ya no se utiliza tanto, desde que aparecid la caracteristica
 Default Properties en la versión 6 de ECMAScript. Utilizandolo de esta manera, en
@@ -1172,7 +971,7 @@ componentes. Esto se hace a través de la prop especial children. Por ejemplo:
 1}
 
 En este caso, el componente Pane] esta recibiendo un componente h1 como hijo
-a través de la prop children. De esta manera podemos “incrustar” componentes
+a través de la prop children. De esta manera podemos "incrustar" componentes
 o elementos HTML dentro de nuestros propios componentes si el disefio asi lo
 requiere.
 Las props son una herramienta muy potente y esencial en React que te permite crear
@@ -1315,7 +1114,7 @@ COmo hemos comentado ya varias veces, Los Hooks son una caracteristica que
 se introdujo en React 16.8 que permite a los componentes funcionales utilizar
 caracteristicas que antes sdlo estaban disponibles en los componentes de clase,
 como el estado y los métodos del ciclo de vida. Los Hooks son funciones que
-“enganchan” (Hook es “anzuelo” en inglés) los componentes funcionales a las
+"enganchan" (Hook es "anzuelo" en inglés) los componentes funcionales a las
 caracteristicas de React.
 
 En este apartado, hemos visto cémo se utiliza el Hook useState para manejar el
@@ -1441,7 +1240,7 @@ hace clic en él.
 Como mencionamos antes, es importante recordar que debido a la naturaleza de
 los eventos sintéticos en React, no puedes acceder a las propiedades del evento
 de forma asincrona. Si necesitas acceder a un evento de forma asincrona, deberas
-llamar a event . persist () paraeliminar el evento sintético del “pool” de eventos
+llamar a event . persist () paraeliminar el evento sintético del "pool" de eventos
 
 y evitar que React lo limpie:
 1 function MyButton() {
@@ -1467,14 +1266,14 @@ Props Drilling y Event Bubbling
 
 Props Drilling
 
-“Props Drilling” es un término que se utiliza para describir el proceso de pasar datos
+"Props Drilling" es un término que se utiliza para describir el proceso de pasar datos
 de un componente a otro a través de la estructura del arbol de componentes. Esto se
 hace a través de las props.
 
 Imagina que tienes una estructura de componentes en la que un componente
 madre tiene varios componentes hijos, y algunos de esos hijos tienen sus propios
 hijos. Si el componente mis interno necesita acceder a los datos del componente
-madre, esos datos tendrian que “perforar” todos los niveles de componentes hasta
+madre, esos datos tendrian que "perforar" todos los niveles de componentes hasta
 llegar al componente mas interno.
 
 Aqui tienes un ejemplo de cémo se veria esto:
@@ -1503,7 +1302,7 @@ aun cédigo innecesariamente complicado.
 
 Event Bubbling
 
-“Event Bubbling” es un término que se utiliza para describir cémo los eventos en
+"Event Bubbling" es un término que se utiliza para describir cémo los eventos en
 React (y en el DOM en general) se propagan a través de la estructura del arbol
 de componentes. Cuando se dispara un evento (como un clic 0 un cambio de
 entrada), ese evento se propaga hacia arriba a través de la estructura del Arbol de
@@ -1525,7 +1324,7 @@ Esto puede ser util porque te permite manejar un evento en un componente de alto
 nivel, incluso si el evento se disparé en un componente de bajo nivel. Aquitienesun —_ enel componente Madre.
 ejemplo de cémo se veria esto:
 
-Es importante tener en cuenta que, aunque el “event bubbling” puede ser
+Es importante tener en cuenta que, aunque el "event bubbling" puede ser
 
 1 function Madre() ( util, tambión puede llevar a comportamientos inesperados si no se maneja
 2 function handleClick() { correctamente. Por ejemplo, si tienes varios manejadores de eventos en diferentes
@@ -1540,7 +1339,7 @@ a} un evento, a menos que detengas explicitamente la propagación del evento.
 a1}
 Conclusión
 
-El manejo de eventos es una parte fundamental de la creación de aplicaciones
+El manejo de eventos es una parte fundamental de la creación de apps
 interactivas con React. Aunque la sintaxis puede parecer un poco diferente al
 principio, especialmente si tienes constumbre de trabajar con HTML y JS
 puros, te acostumbraras rapidamente a cémo funcionan los eventos en React.
@@ -1611,12 +1410,12 @@ ejemplo, debido a una interacción del usuario), React crea un nuevo V-DOM que
 refleja el nuevo estado de la interfaz de usuario.
 
 + Diferenciación (Diffing): React compara el nuevo V-DOM con el antiguo
-V-DOM. Este proceso se conoce como “diferenciación” o “diffing”. React
+V-DOM. Este proceso se conoce como "diferenciación" o "diffing". React
 determina exactamente qué partes del V-DOM han cambiado.
 
 +Reconciliación: React actualiza el DOM real para reflejar los cambios
 identificados en el paso de diferenciación. Este proceso se conoce como
-“reconciliación”. React es muy eficiente en este proceso, actualizando solo las
+"reconciliación". React es muy eficiente en este proceso, actualizando solo las
 partes del DOM que necesitan cambiar.
 
 - Renderizado: Finalmente, el navegador renderiza los cambios en la pantalla.
@@ -1665,19 +1464,19 @@ YY III ) :
 
 ‘Métodos del ciclo de vida de un componente
 
-Ademas de estas tres fases, hay una fase adicional llamada “Error Handling” que
+Ademas de estas tres fases, hay una fase adicional llamada "Error Handling" que
 se utiliza para manejar cualquier error que ocurra durante el renderizado, en un
 método del ciclo de vida, o en el constructor de un componente hijo. Los métodos
 que se ejecutan durante esta fase son static getDerivedStateFromError y
 componentDidCatch.
 
-Cada uno de estos métodos del ciclo de vida ofrece un “gancho” que podemos
+Cada uno de estos métodos del ciclo de vida ofrece un "gancho" que podemos
 utilizar para controlar lo que sucede antes, durante y después de que un
 componente se renderice en el DOM. Esto proporciona un gran control sobre la
 légica de la app y permite optimizaciones de rendimiento, como evitar
 renderizados innecesarios.
 Todos estos métodos pueden utilizarse en los componentes de tipo Clase. En los
-componentes de tipo función no es posible, pero silo es acceder a estos “momentos”
+componentes de tipo función no es posible, pero silo es acceder a estos "momentos"
 
 utilizando hooks como useEf fect que veremos en el siguiente apartado.
 
@@ -1971,7 +1770,7 @@ Veamos un ejemplo basico de cémo se utiliza useEffect:
 4 const [count, setCount] = useState(0);
 
 6 useEffect(() => {
-7 document.title = “You clicked ${count} times®;
+7 document.title = "You clicked ${count} times®;
 6 3, [eount]);
 
 10 «return (
@@ -2015,7 +1814,7 @@ so}, £0)
 return (
 <div>
 
-14 {data ? “Data: ${data}~ ‘Loading...'}
+14 {data ? "Data: ${data}~ ‘Loading...'}
 45 </div>
 
 v5
@@ -2123,9 +1922,9 @@ return (
 i )S
 
 En este ejemplo, para ilustrar como se combina el hook con la creación de
-contextos, ThemeContext. Provider proporciona el valor “dark” al contexto.
+contextos, ThemeContext. Provider proporciona el valor "dark" al contexto.
 ThemedButton, que esta dentro de ThemeContext. Provider, utilizara este
-valor en lugar del valor por defecto “light”.
+valor en lugar del valor por defecto "light".
 
 useContext es un Hook muy potente que simplifica el uso de los contextos
 en React. Permite acceder a los valores de contexto sin tener que envolver los
@@ -2217,7 +2016,7 @@ return (
 
 En este ejemplo, useRef se utiliza para almacenar el ID del intervalo. Esto permite
 que el intervalo se limpie cuando el componente se desmonta y cuando se hace clic
-en el botón “Stop Timer”.
+en el botón "Stop Timer".
 useRef es un Hook muy ttil que permite mantener referencias a los nodos del
 DOM y almacenar variables de instancia en los componentes funcionales de React.
 Es utilizado mucho en formularios para mantener la referencia a los distintos
@@ -2294,9 +2093,9 @@ para generar un prefijo compartido para ellos:
 En este ejemplo, useId se utiliza para generar un prefijo de ID compartido para los
 campos de entrada del nombre y del apellido.
 
-Si renderizas varias aplicaciones de React independientes en una sola pagina,
+Si renderizas varias apps de React independientes en una sola pagina,
 puedes pasar ident ifierPrefix como una opcióna tus llamadas createRoot
-o hydrateRoot. Esto asegura que los IDs generados por las dos aplicaciones
+o hydrateRoot. Esto asegura que los IDs generados por las dos apps
 diferentes nunca choquen, ya que cada identificador generado con useId
 comenzar con el prefijo distinto que has especificado.
 
@@ -2318,7 +2117,7 @@ const rooti = createRoot (document. getElementById('root1'), {
 
 12 root2.render(<App />);
 
-En este ejemplo, createRoot se utiliza para renderizar dos aplicaciones de React
+En este ejemplo, createRoot se utiliza para renderizar dos apps de React
 en la misma pagina con diferentes prefijos de ID.
 
 Por favor, ten en cuenta que useId no debe ser utilizado para generar claves
@@ -2500,7 +2299,7 @@ costosa. La función se ejecuta sdlo cuando cambian a 0 b. Si a y b no cambian e
 renderizados, useMemo devolvera el resultado del ultimo renderizado en lugar de
 ejecutar la función de nuevo.
 Por favor, ten en cuenta que useMemo es una optimización, y no una
-garantia. React puede decidir “olvidar” algunos valores memorizados para
+garantia. React puede decidir "olvidar" algunos valores memorizados para
 liberar memoria. Usa useMemo como una sugerencia, no como una garantia
 semantica. Esto significa que puedes usar useMemo para optimizar el
 rendimiento, pero no debes confiar en él para la semantica.
@@ -2683,7 +2482,7 @@ Conclusión
 
 En este capitulo, hemos explorado en profundidad el ciclo de vida de los
 componentos en React y cémo los Hooks nos permiten interactuar con él. Hemos
-aprendido que los Hooks son funciones que nos permiten “enganchar” el estado de
+aprendido que los Hooks son funciones que nos permiten "enganchar" el estado de
 React y el ciclo de vida de los componentos desde funciones en lugar de clases.
 Hemos explorado varios Hooks incorporados en React, incluyendo useState,
 useEffect, useContext, useCallback, useMemo, useRef, useId, y
@@ -2726,7 +2525,7 @@ Guide to ReactJS and Friends. Fullstack.io.
 Capitulo 4: Gestidn de estados globales
 Introducción
 
-En el dev de aplicaciones web modernas, uno de los desaffos mas comunes
+En el dev de apps web modernas, uno de los desaffos mas comunes
 es la gestidn del estado. El estado de una app se refiere a los datos
 que se mantienen y cambian a lo largo del tiempo y que pueden afectar el
 comportamiento y la representación de la app. En una app React, el
@@ -2743,7 +2542,7 @@ Por ejemplo, en una app de comercio electrónico, el carrito de compras puede
 ser considerado como un estado global, ya que muchos componentes diferentes,
 como la pagina de detalles del producto, la barra de navegación y la pagina de pago,
 pueden necesitar acceder y modificar el carrito de compras. Otro ejemplo podria ser
-el theme que se muestra en la UI (modo “claro”, modo “oscuro’,...)
+el theme que se muestra en la UI (modo "claro", modo "oscuro’,...)
 
 La gestion del estado global se refiere a cémo se organiza, almacena y manipula este
 estado global. Una gestión adecuada del estado global puede hacer que tu aplicacion
@@ -2755,7 +2554,7 @@ En React, hay varias formas de manejar el estado global. Algunas de las mas
 populares incluyen la Context API y Redux, que seran los temas principales de este
 capitulo, Ambas ofrecen formas de compartir y manipular el estado global, pero
 cada una tiene sus propias ventajas y desventajas, y puede ser mas adecuada para
-diferentes tipos de aplicaciones.
+diferentes tipos de apps.
 
 Antes de adentrarnos en estas soluciones, es importante tener una sdlida
 comprensión de los conceptos basicos de JS y React. Si necesitas repasar
@@ -2770,7 +2569,7 @@ La Context API es una caracteristica incorporada en React que permite compartir
 valores entre componentes sin tener que pasar props explicitamente a través de
 cada nivel del arbol de componentes.
 
-Esto es bastante util para compartir datos que pueden considerarse “globales” para
+Esto es bastante util para compartir datos que pueden considerarse "globales" para
 un arbol de componentes, como el usuario autenticado actual, el tema preferido, o
 lainformación del carrito de compras en una app de comercio electrónico.
 
@@ -2813,7 +2612,7 @@ ejemplo de como se hace:
 
 1 <MyContext.Consumer>
 2 {value => /* renderiza algo basado en el valor del contexto
-“/}
+"/}
 
 3 </MyContext.Consumer>
 
@@ -2883,7 +2682,7 @@ useContext para acceder al estado del carrito de compras:
 Como puedes ver, la Context API proporciona una forma flexible de compartir el
 estado global en una app React. Sin embargo, tambión tiene sus limitaciones.
 
-Por ejemplo, puede ser menos eficiente para grandes aplicaciones con muchos
+Por ejemplo, puede ser menos eficiente para grandes apps con muchos
 cambios de estado, y puede ser mas dificil de manejar para estados complejos o
 légicas de negocio. Ademas, el uso excesivo de la Context API puede hacer que
 el cédigo sea més dificil de entender y mantener, ya que el estado se comparte
@@ -2984,15 +2783,15 @@ mantenimiento y las pruebas de nuestro cédigo.
 En el siguiente apartado, exploraremos otra solución popular para la gestidn del
 estado global en React: Redux. Esta herramienta puede ser un poco mas compleja
 de entender y usar que la Context API, pero ofrece mas control y puede ser mas
-eficiente para grandes aplicaciones con muchos cambios de estado.
+eficiente para grandes apps con muchos cambios de estado.
 Redux: Introduccion y principios basicos
 
-Redux es una biblioteca de JS para la gestión del estado de las aplicaciones.
+Redux es una biblioteca de JS para la gestión del estado de las apps.
 Aunque se utiliza comtinmente con React, Redux es agnéstico del framework y
 puede utilizarse con cualquier biblioteca 0 framework de JS. Redux se basa
 en los principios del flujo de datos unidireccional y la inmutabilidad del estado, lo
-que puede hacer que las aplicaciones sean mas predecibles y faciles de entender.
-FB, en su momento, lo llamé “Flux Pattern”.
+que puede hacer que las apps sean mas predecibles y faciles de entender.
+FB, en su momento, lo llamé "Flux Pattern".
 
 >) )
 ( Action Rr Dispatcher _— Store nf View 4
@@ -3089,7 +2888,7 @@ una nueva tarea, y un reducer para manejar esta acción.
 
 Primero, definamos la acción para afiadir una nueva tarea. En Redux, es comin
 
-definir funciones Ilamadas “action creators” que crean las acciones por nosotros:
+definir funciones Ilamadas "action creators" que crean las acciones por nosotros:
 
 1 let nextTodoId = 0;
 
@@ -3480,10 +3279,10 @@ at
 Eneste cédigo, utilizamos useSe lector para seleccionar el estado del carrito dela
 tienda Redux, y useDispatch para despachar acciones.
 
-Cuando el usuario hace clic en el botón “Add to cart”, despachamos la acción
-addToCart con el articulo. Cuando el usuario hace clic en el botón “Afiadir al
+Cuando el usuario hace clic en el botón "Add to cart", despachamos la acción
+addToCart con el articulo. Cuando el usuario hace clic en el botón "Afiadir al
 
-carrito”, despachamos la acción removeFromCart con el articulo.
+carrito", despachamos la acción removeFromCart con el articulo.
 
 Finalmente, vamos a utilizar nuestro componente de carrito de compras en nuestro
 componente principal de la app. En src/App.js, agrega el siguiente
@@ -3536,16 +3335,16 @@ y funciones entre componentes sin necesidad de pasar props de forma manual a
 través de la jerarquia de componentes.
 
 Es facil de usar y no requiere la instalacin de librerias adicionales. Sin embargo,
-puede ser menos eficiente para grandes aplicaciones con muchos cambios de
+puede ser menos eficiente para grandes apps con muchos cambios de
 estado, y puede ser mas dificil de manejar para casos de uso mas complejos.
 
 Redux
 
 Redux es una libreria externa que proporciona un contenedor de estado predecible
-para aplicaciones JS. Es muy poderoso y flexible, y tiene una gran
+para apps JS. Es muy poderoso y flexible, y tiene una gran
 comunidad y ecosistema de middleware y extensiones.
 
-Sin embargo, Redux puede ser excesivo para aplicaciones pequefias o sencillas, y su
+Sin embargo, Redux puede ser excesivo para apps pequefias o sencillas, y su
 API puede ser un poco complicada para los principiantes. Su versión Redux Toolkit
 
 mejora esto y lo hace mas amigable.
@@ -3564,7 +3363,7 @@ y, sobre todo, facilmente testeable.
 Jotai
 
 jotai toma un enfoque atémico para la gestión del estado global de React.
-Puedes construir el estado combinando “atomos” y los renders se optimizan
+Puedes construir el estado combinando "atomos" y los renders se optimizan
 automaticamente basandose en la dependencia de los Atomos.
 
 Esto resuelve el problema de re-renderizado extra del contexto de React y elimina la
@@ -3574,10 +3373,10 @@ una app TypeScript empresarial con requisitos complejos.
 Zustand
 Zustand es una solución de gestión de estado pequefia, répida y escalable. Zustand
 
-tiene una API cémoda basada en hooks. No es boilerplate y no es “opinionado”, pero
+tiene una API cémoda basada en hooks. No es boilerplate y no es "opinionado", pero
 tiene suficiente convención para ser explicito y parecido a Flux.
 Aunque es sencillo, Zustand ha dedicado mucho tiempo a lidiar con problemas
-comunes, como el temido problema del “zombie child”, la concurrencia de React, y la
+comunes, como el temido problema del "zombie child", la concurrencia de React, y la
 
 pérdida de contexto entre renderizadores mixtos.
 0 Mobx.
@@ -3586,11 +3385,11 @@ Conclusión
 
 Jotai, por otro lado, ofrece un enfoque atémico que puede ser ttil para ciertos casos
 La elección de la solución de manejo de estado depende en gran medida de las ge uso, En tiltima instancia, la mejor solución es la que mejor se adapta a tus
-necesidades especificas de tu proyecto. Para aplicaciones pequefias 0 proyectos con —_recesidades y te resulta mas cémoda de usar
+necesidades especificas de tu proyecto. Para apps pequefias 0 proyectos con —_recesidades y te resulta mas cémoda de usar
 
 requisitos sencillos, la Context API o Zustand pueden ser suficientes.
 
-Para aplicaciones mas grandes o complejas, es posible que desees considerar Redux
+Para apps mas grandes o complejas, es posible que desees considerar Redux
 Referencias
 
 + Porcello, E., & Banks, A. (2020). Learning React: Modern Patterns for Developing
@@ -3619,12 +3418,12 @@ moderna: La navegación entre diferentes pantallas, vistas o paginas dentro de u
 mismo sitio web.
 
 En particular, exploraremos cémo React Router puede ayudarnos a manejar la
-navegacion en nuestras aplicaciones React.
+navegacion en nuestras apps React.
 
 Pero antes de sumergirse en React Router, es importante entender el contexto en
 el que se utiliza. Especificamente, necesitamos entender la diferencia entre una
-“aplicacion de pagina tinica” (SPA o Single Page Application) y una app de
-“renderizado del lado del servidor” (SSR 0 Server-Side Rendering).
+"aplicacion de pagina tinica" (SPA o Single Page Application) y una app de
+"renderizado del lado del servidor" (SSR 0 Server-Side Rendering).
 
 SPA vs SSR
 
@@ -3654,7 +3453,7 @@ cliente. Cuando el usuario navega a una nueva pagina, la SPA simplemente actuali
 la pagina actual en lugar de solicitar una nueva pagina al servidor.
 
 React Router es una biblioteca que nos permite manejar el enrutamiento en
-nuestras aplicaciones React de una manera que es eficiente y facil de entender. En
+nuestras apps React de una manera que es eficiente y facil de entender. En
 los siguientes apartados, aprenderemos cémo instalar y configurar React Router,
 como crear rutas y manejar el enrutamiento dinamico, y como navegar de forma
 
@@ -3763,9 +3562,9 @@ seguidos del nombre del parametro.
 1 <Route path="/users/:userId" component={UserProfile} />
 
 En este ejemplo, :userId es un pardémetro. Cuando un usuario visita una URL
-como “/users/123”, React Router renderizar4 el componente UserProfile, y el
+como "/users/123", React Router renderizar4 el componente UserProfile, y el
 
-valor del parametro userld sera “123”.
+valor del parametro userld sera "123".
 
 Dentro de nuestro componente UserProfile, podemos acceder al valor del
 parametro userId utilizando el hook useParams que proporciona React Router.
@@ -3946,7 +3745,7 @@ en la nueva version.
 
 dindmico \
 
-4 “userId*
+4 "userId*
 
 5 path: "/users/:userId",
 
@@ -3982,7 +3781,7 @@ veremos algunas alternativas a React Router.
 Alternativas a React Router
 
 Aunque React Router es una de las bibliotecas mas populares para el enrutamiento
-en aplicaciones React, existen otras alternativas que podrian ser mas adecuadas
+en apps React, existen otras alternativas que podrian ser mas adecuadas
 dependiendo de las necesidades especificas de tu proyecto. A continuación, te
 presento tres de ellas: Wouter, React Navigation y Next Router.
 
@@ -4027,14 +3826,14 @@ Y para el caso de rutas dinamicas seria algo asi:
 
 React Navigation
 
-React Navigation es una solución de enrutamiento para aplicaciones méviles
+React Navigation es una solución de enrutamiento para apps méviles
 creadas con React Native. Aunque se sale del ambito de este libro, es importante
 mencionarlo ya que es una de las soluciones mas populares para el enrutamiento en
-aplicaciones méviles construidas con esta herramienta.
+apps méviles construidas con esta herramienta.
 
 React Navigation proporciona una serie de navegadores incorporados que ofrecen
 una experiencia fluida y lista para usar. Ademas, es completamente personalizable,
-lo que significa que si sabes como escribir aplicaciones usando JS, puedes
+lo que significa que si sabes como escribir apps usando JS, puedes
 personalizar cualquier parte de React Navigation.
 
 Esto seria un ejemplo muy basico de React Navigation, utilizando dos screens:
@@ -4070,11 +3869,11 @@ component={ProfileScreen} />
 Next Router
 
 Next Router es la solución de enrutamiento integrada en Next.js, un framework
-popular para aplicaciones React con renderizado en el servidor (SSR).
+popular para apps React con renderizado en el servidor (SSR).
 
 Aligual que React Navigation, Next Router se sale del ambito de este libro, pero vale
 la pena mencionarlo debido a su popularidad. Next Router se basa en el concepto
-de “paginas”: cuando se agrega un archivo al directorio de paginas (pages), esta
+de "paginas": cuando se agrega un archivo al directorio de paginas (pages), esta
 automaticamente disponible como una ruta. Tambión soporta rutas dindmicas, lo
 que te permite agregar parametros personalizados a tus URL.
 
@@ -4084,7 +3883,7 @@ que explores cada una de ellas para determinar cual es la mejor opción para ti.
 Conclusión
 
 En este capitulo, hemos explorado en profundidad el enrutamiento en React
-utilizando React Router. Comenzamos con una introduccidn a las aplicaciones
+utilizando React Router. Comenzamos con una introduccidn a las apps
 de tinica pagina (SPA) y el renderizado del lado del servidor (SSR), y cémo
 el enrutamiento funciona en cada una de ellas. Luego, nos adentramos en la
 instalación y configuración de React Router, la creación de rutas estaticas y
@@ -4100,11 +3899,11 @@ fluida y eficiente.
 
 Esperamos que este capitulo te haya proporcionado una comprensión sdlida del
 enrutamiento en React y cémo puedes utilizar React Router para manejar la
-navegación en tus aplicaciones. Con estos conocimientos, estas bien equipado para
-construir aplicaciones React mas complejas y robustas.
+navegación en tus apps. Con estos conocimientos, estas bien equipado para
+construir apps React mas complejas y robustas.
 
 En el préximo capitulo, cambiaremos de marcha y nos centraremos en un
-aspecto diferente pero igualmente importante de las aplicaciones React: los estilos.
+aspecto diferente pero igualmente importante de las apps React: los estilos.
 Aprenderemos sobre las diferentes formas de ajiadir estilos a tu app React,
 desde CSS en JS hasta médulos CSS y styled-components.
 Referencias
@@ -4268,7 +4067,7 @@ nombres.
 que no tienes que aprender una nueva sintaxis.
 Inconvenientes de CSS Modules
 
-1. No es CSS en JS: A diferencia de las soluciones de “CSS en JS” como styled-
+1. No es CSS en JS: A diferencia de las soluciones de "CSS en JS" como styled-
 components, CSS Modules no te permite definir estilos dinamicos basados en
 las props de los componentes.
 
@@ -4282,14 +4081,14 @@ gestionar y organizar los archivos de estilos.
 Como resumen, CSS Modules es una gran opción si quieres encapsular los estilos a
 nivel de componente y evitar los problemas de colisión de nombres de clases. Sin
 embargo, si necesitas estilos dindmicos basados en las props de los componentes,
-es posible que desees considerar una solución de “CSS en JS” como styled-
+es posible que desees considerar una solución de "CSS en JS" como styled-
 components.
 CSS en JS: Styled-components y otras soluciones
 
-“CSS en JS” es una técnica que permite escribir CSS directamente dentro de
+"CSS en JS" es una técnica que permite escribir CSS directamente dentro de
 JS. Esta técnica ha ganado popularidad en la comunidad de React debido
 a su capacidad para proporcionar estilos dindmicos y encapsulados a nivel de
-componente. Existen varias bibliotecas de “CSS en JS”, pero en este apartado nos
+componente. Existen varias bibliotecas de "CSS en JS", pero en este apartado nos
 centraremos en una de las mas populares: styled-components.
 
 Cémo usar Styled-components
@@ -4309,7 +4108,7 @@ dentro de un Template Literal de JS.
 1 import styled from 'styled-components';
 2
 
-3 const Button = styled. button”
+3 const Button = styled. button"
 
 4 background-color: blue;
 
@@ -4355,7 +4154,7 @@ margin: 1em;
 10 border-radius: 3px;
 
 12 /* Adaptamos los estilos basados en las props */
-13 ${props => props.primary && css”
+13 ${props => props.primary && css"
 
 14 background: white;
 
@@ -4463,7 +4262,7 @@ Grid y Flexbox en React
 
 Flexbox en React
 
-Flexbox es un modelo de disefio CSS que nos permite disefiar interfaces de usuario
+Flexbox es un modelo de disefio CSS que nos permite disefiar UIs
 flexibles y eficientes.
 
 En React, puedes usar Flexbox de la misma manera que lo harias en CSS puro. Aqui
@@ -4659,7 +4458,7 @@ pantalla.
 
 El disefio responsive utiliza CSS y HTML para redimensionar, ocultar, reducir 0
 aumentar un sitio web, para que se vea bien en todos los dispositivos (escritorio,
-tablet, smartphone, etc.). Un disefio responsive se “ajusta” dependiendo del tamario
+tablet, smartphone, etc.). Un disefio responsive se "ajusta" dependiendo del tamario
 de la pantalla.
 
 Con Styled Components, puedes usar las funciones de las media queries para hacer
@@ -4689,8 +4488,8 @@ En este ejemplo, ResponsiveDiv cambiarA su color de fondo a lightcoral en
 pantallas que tengan un ancho maximo de 600px.
 
 El disefio adaptativo, por otro lado, utiliza varias versiones de un sitio web que
-estan personalizadas para diferentes tamarios de pantalla. Un disefio adaptativo “se
-adapta” a la pantalla en la que se esta viendo.
+estan personalizadas para diferentes tamarios de pantalla. Un disefio adaptativo "se
+adapta" a la pantalla en la que se esta viendo.
 
 Con React y Styled Components, puedes usar el estado y los eventos del ciclo de
 vida de los componentes para cambiar el disefio de tus componentes en función
@@ -4769,7 +4568,7 @@ mejorar la experiencia de usuario en diferentes dispositivos y tamarios de panta
 Integracion de bibliotecas de componentes UI
 
 Las librerias de componentes UI son conjuntos de componentes predefinidos
-que puedes usar para acelerar el dev de tus aplicaciones. Estas bibliotecas
+que puedes usar para acelerar el dev de tus apps. Estas bibliotecas
 proporcionan una amplia gama de componentes, desde botones y formularios
 hasta barras de navegación y modales, todos con estilos y funcionalidades ya
 
@@ -4937,7 +4736,7 @@ integrar bibliotecas de componentes UI en tus proyectos de React, presentando
 
 algunas de las mas populares.
 
-Con estos conocimientos, ahora deberias ser capaz de crear interfaces de usuario
+Con estos conocimientos, ahora deberias ser capaz de crear UIs
 atractivas y responsive en React que se vean y funcionen bien en una variedad de
 dispositivos y tamatios de pantalla.
 
@@ -4980,7 +4779,7 @@ Introducción
 
 En una app web moderna, la comunicación con servidores es tambión una
 parte esencial. Ya sea para obtener datos, enviar datos, autenticar usuarios, 0
-realizar cualquier otra operación, las aplicaciones web necesitan interactuar con
+realizar cualquier otra operación, las apps web necesitan interactuar con
 los servidores. En este capitulo, vamos a explorar cémo podemos hacer esto en una
 
 app React.
@@ -5159,7 +4958,7 @@ useEffect(() => { 1 import { useHttp } from "./useHttp";
 setIsLoading(true) ; 2
 setError(nul1) 3 function App() {
 fetch(url) 4 const { isLoading, error, data } = useHttp(
-.then(response => { 5 “https://jsonplaceholder.typicode.com/todos"
+.then(response => { 5 "https://jsonplaceholder.typicode.com/todos"
 
 if (!response.ok) { v5
 setError('Failed to fetch.');
@@ -5290,7 +5089,7 @@ const { isLoading, error, data, sendRequest } = useHttp();
 const handleSubmit = (event) => {
 event.preventDefault();
 sendRequest (
-“https: //jsonplaceholder.typicode.com/todos",
+"https: //jsonplaceholder.typicode.com/todos",
 "POST",
 { title, completed }
 3
@@ -5360,16 +5159,16 @@ biblioteca que tiene una gran aceptación, se trata de TanStack Query (0 React Q
 React Query (TanStack Query)
 
 React Query, ahora conocida como TanStack Query, es una biblioteca que se describe
-como la herramienta de obtención de datos que faltaba para las aplicaciones
+como la herramienta de obtención de datos que faltaba para las apps
 web. En términos mas técnicos, facilita la obtención, almacenamiento en caché,
-sincronizacion y actualización del estado del servidor en tus aplicaciones web.
+sincronizacion y actualización del estado del servidor en tus apps web.
 
 En un inicio, sélo podia usarse con React, pero en su cambio de nombre a TanStack
 ahora se puede utilizar en Vanilla JS, TypeScript, Vue, Svelte, Solid y React.
 
 Origen y evolución a TanStack Query
 
-La mayoria de los frameworks web principales no vienen con una forma “opinada”
+La mayoria de los frameworks web principales no vienen con una forma "opinada"
 de obtener 0 actualizar datos de manera holistica. Debido a esto, los desarrolladores
 terminanos construyendo meta-frameworks que encapsulan opiniones estrictas
 sobre la obtención de datos, o inventamos nuestras propias formas de obtener
@@ -5378,7 +5177,7 @@ datos, como el Custom hook que vimos en el ejemplo anterior.
 Esto generalmente significa juntar el estado y los efectos secundarios basados en
 componentes, o usar bibliotecas de gestión de estado de propdsito general para
 
-almacenar y proporcionar datos asincronos en sus aplicaciones.
+almacenar y proporcionar datos asincronos en sus apps.
 
 React Query surgié como una solución a estos problemas, proporcionando una
 forma eficiente y efectiva de manejar el estado del servidor. Con el tiempo, la
@@ -5729,7 +5528,7 @@ detallados.
 Autenticacion y autorizacion
 
 La autenticación y la autorización son aspectos muy importantes de la seguridad
-en las aplicaciones web.
+en las apps web.
 
 La autenticación se refiere al proceso de verificar la identidad de un usuario,
 mientras que la autorización se refiere al proceso de verificar los permisos de un
@@ -5792,7 +5591,7 @@ peticion.
 
 2 const response = await fetch('/api/private', {
 
-3 headers: { Authorization: “Bearer ${token}> },
+3 headers: { Authorization: "Bearer ${token}> },
 6 3)
 6 if (response.ok) {
 
@@ -5948,7 +5747,7 @@ useMutation, y hemos discutido cémo puede reemplazar a Redux para la gestion
 del estado del servidor.
 
 Finalmente, hemos discutido la autenticación y la autorización, dos aspectos
-fundamentales de la seguridad en las aplicaciones web. Hemos aprendido a
+fundamentales de la seguridad en las apps web. Hemos aprendido a
 implementarlas utilizando tokens, y hemos explorado algunas soluciones de
 
 terceros que pueden facilitar esta tarea.
@@ -5987,11 +5786,11 @@ de la programación web es su enfoque en la eficiencia y el rendimiento. Sin
 embargo, el rendimiento no siempre es algo que se maneja de forma éptima por
 defecto. Requiere conocimientos y habilidades especificas para sacar el maximo
 provecho de las herramientas que React nos proporciona para optimizar nuestras
-aplicaciones.
+apps.
 
 En este capitulo, aprenderemos técnicas y mejores practicas para mejorar el
 
-rendimiento de nuestras aplicaciones React. Desde la virtualización y paginación
+rendimiento de nuestras apps React. Desde la virtualización y paginación
 de listas hasta la memoización de componentes, el code splitting y el lazy
 loading, cada sección de este capitulo se centrard en una técnica especifica,
 proporcionandote la teoria y ejemplos de cédigo.
@@ -6003,7 +5802,7 @@ el campo de la optimización del rendimiento web y ofrecen valiosos recursos par
 profundizar en estos temas.
 Paginacion de listas
 
-La paginación de listas es una técnica crucial en el dev de aplicaciones web
+La paginación de listas es una técnica crucial en el dev de apps web
 para gestionar grandes conjuntos de datos. En lugar de cargar y mostrar todos los
 datos de una vez, que puede ser ineficiente y llevar a un pobre rendimiento de la
 app, la paginación divide los datos en paginas mas manejables.
@@ -6015,7 +5814,7 @@ presentar los datos de manera ms organizada y manejable.
 
 Paginación con React-Router-Pagination
 
-Un paquete muy ttil para implementar la paginación en aplicaciones React
+Un paquete muy ttil para implementar la paginación en apps React
 es react-router-pagination. Esta biblioteca proporciona una serie de
 componentes y hooks para manejar la paginación en combinación con react-
 router, el estandar de facto para la gestión de rutas en React.
@@ -6218,7 +6017,7 @@ cuando se navegue ala siguiente pagina.
 Memoizacion de componentes
 
 La memoización es una técnica de optimización que se usa para acelerar las
-aplicaciones al almacenar los resultados de operaciones costosas y reutilizindolos
+apps al almacenar los resultados de operaciones costosas y reutilizindolos
 en lugar de volver a ejecutar las operaciones. En React, la memoización puede
 aplicarse a los componentes y las funciones para evitar el renderizado o los clculos
 
@@ -6281,19 +6080,19 @@ Code Splitting y Lazy Loading
 La optimización del rendimiento no siempre implica hacer que el cédigo existente
 sea més eficiente. A veces, implica simplemente cambiar cuando y cémo se
 entrega ese cédigo. Dos técnicas muy efectivas para mejorar el rendimiento de las
-aplicaciones web, en particular, son el code splitting y el lazy loading.
+apps web, en particular, son el code splitting y el lazy loading.
 
 Code Splitting
 
 El code splitting es el proceso de dividir el cédigo de tu app en multiples
 bundles (paquetes) que pueden ser cargados bajo demanda. Las herramientas
 modernas como Vite y Next.js, que son cada vez mas populares para la creación de
-aplicaciones React, tienen soporte incorporado para ello.
+apps React, tienen soporte incorporado para ello.
 
 Esto significa que cada vez que un usuario carga tu app, solo se esta
 descargando el cédigo necesario para la carga inicial de la pagina. El resto del
 cédigo se puede cargar bajo demanda segtin sea necesario, lo que puede mejorar
-significativamente los tiempos de carga, especialmente para aplicaciones grandes.
+significativamente los tiempos de carga, especialmente para apps grandes.
 
 Para Vite, la configuración de code splitting puede estar en el archivo
 vite.config. js. Vite divide automaticamente el cddigo cuando se utiliza
@@ -6372,7 +6171,7 @@ En este ejemplo, React.lazy() esta importando dinamicamente un
 
 componente. Esto significa que LazyComponent no se cargard hasta que
 sea necesario. El componente Suspense permite especificar un contenido de
-“fallback” que se mostrar mientras el componente est cargando.
+"fallback" que se mostrar mientras el componente est cargando.
 
 Aunque este es un ejemplo basico, puedes aplicar la misma idea a cualquier
 componente de tu app. Por ejemplo, podrias decidir hacer lazy loading
@@ -6552,7 +6351,7 @@ discutimos varias mejores practicas de rendimiento en React, como el uso eficien
 del Contexto y Redux.
 
 Es importante recordar que la optimización y el rendimiento son aspectos cruciales
-del dev de aplicaciones web. Asegurarse de que tu app se ejecute de
+del dev de apps web. Asegurarse de que tu app se ejecute de
 manera eficiente puede llevar a una mejor experiencia del usuario, y puede marcar
 la diferencia en la percepción del usuario sobre la calidad de tu app.
 
@@ -6653,7 +6452,7 @@ O => {
 
 Eneste ejemplo, test es una función global proporcionada por Jest que define una
 prueba. La función expect se utiliza para hacer afirmaciones sobre lo que el cédigo
-deberia hacer, y .toBe() es un “matcher” que comprueba si el valor esperado
+deberia hacer, y .toBe() es un "matcher" que comprueba si el valor esperado
 coincide con el valor real.
 
 Vitest
@@ -6696,7 +6495,7 @@ que la transición entre las dos herramientas sea bastante sencilla.
 Vitest es una excelente opción para las pruebas, especialmente si estas utilizando
 Vite en tu proyecto. Vite es un entorno de dev y compilador moderno y
 rapido para JS, y es recomendado por el equipo de React para construir
-aplicaciones de una sola pagina (SPA). Vitest esta optimizado para Vite y requiere
+apps de una sola pagina (SPA). Vitest esta optimizado para Vite y requiere
 practicamente cero configuración, lo que facilita su uso.
 
 Veamos algunos ejemplos mas complejos de pruebas con Vitest.
@@ -6967,7 +6766,7 @@ Prettier.
 
 ESlint
 
-ESlint es una herramienta de linting para JS. El “linting” es el proceso
+ESlint es una herramienta de linting para JS. El "linting" es el proceso
 de analizar el cédigo en busca de posibles errores 0 problemas de estilo. ESlint
 viene con un conjunto de reglas predefinidas que puedes personalizar segiin tus
 necesidades. Tambión es extensible, lo que significa que puedes escribir tus propias
@@ -7009,7 +6808,7 @@ jsx: true,
 45 sourceType: ‘module’,
 16 6},
 
-1” plugins: [
+1" plugins: [
 
 18 ‘react’,
 
@@ -7045,11 +6844,11 @@ af
 
 2 "semi": true,
 
-3 “trailingComma": "all",
-4 "“singleQuote": true,
+3 "trailingComma": "all",
+4 ""singleQuote": true,
 
-5 “printWidth"
-6 "“tabWidth": 2
+5 "printWidth"
+6 ""tabWidth": 2
 7}
 
 80,
@@ -7176,10 +6975,10 @@ E2E: Cypress y Playwright.
 Cypress
 Cypress es un framework de pruebas de extremo a extremo que hace que la
 
-configuración, escritura, ejecución y depuración de pruebas para aplicaciones web
+configuración, escritura, ejecución y depuración de pruebas para apps web
 sea bastante sencilla. Cypress tambión toma instantaneas o capturas a medida que
 
-se ejecutan tus pruebas. Puedes “viajar en el tiempo” para ver cémo se veia tu
+se ejecutan tus pruebas. Puedes "viajar en el tiempo" para ver cémo se veia tu
 
 app en cualquier punto de la prueba.
 
@@ -7275,15 +7074,15 @@ started’ }).click();
 25 3)5
 
 En la primera prueba, toHaveTitle(/Playwright/) verifica que el titulo de
-la pagina contenga la palabra “Playwright”. La barra inclinada / alrededor de
+la pagina contenga la palabra "Playwright". La barra inclinada / alrededor de
 Playwright indica que es una expresión regular, lo que significa que estamos
-buscando cualquier titulo que contenga la palabra “Playwright”, no solo los titulos
-que son exactamente “Playwright”.
+buscando cualquier titulo que contenga la palabra "Playwright", no solo los titulos
+que son exactamente "Playwright".
 
 En la segunda prueba, getByRole('link', { name: 'Get started' })
-selecciona un enlace con el texto “Get started”. Luego, .click() hace clic en ese
+selecciona un enlace con el texto "Get started". Luego, .click() hace clic en ese
 enlace. Finalmente, toHaveURL(/.*intro/) verifica que la URL de la pagina
-contenga la palabra “intro”. Esto es util para comprobar que el enlace “Get started”
+contenga la palabra "intro". Esto es util para comprobar que el enlace "Get started"
 redirige a la pagina correcta.
 
 Con esto concluimos nuestro recorrido por el mundo del testing y la calidad del
@@ -7304,7 +7103,7 @@ mantener y probar.
 
 En el préximo capitulo, nos adentraremos en el despliegue a producción.
 
-Aprenderemos cémo llevar nuestras aplicaciones de React desde nuestro entorno
+Aprenderemos cémo llevar nuestras apps de React desde nuestro entorno
 de dev local hasta un entorno de producción, donde los usuarios podran
 
 interactuar con ellas.
@@ -7334,7 +7133,7 @@ testing-library.com/docs/react-testing-library/intro
 Capitulo 10: Despliegue y Entornos de Produccion
 Introducción
 
-En este capitulo final, exploraremos cémo llevar nuestras aplicaciones React desde
+En este capitulo final, exploraremos cémo llevar nuestras apps React desde
 nuestro entorno de dev local hasta un entorno de producción optimizado,
 
 listo para ser consumido por los usuarios finales.
@@ -7342,7 +7141,7 @@ listo para ser consumido por los usuarios finales.
 Abordaremos la creación de un entorno de producción, el despliegue en
 plataformas populares como Netlify y Vercel, y finalmente, discutiremos sobre SEO
 
-y rendimiento en aplicaciones de React.
+y rendimiento en apps de React.
 Creación de un entorno de producción optimizado
 
 Cuando desarrollamos una app, generalmente trabajamos en un entorno de
@@ -7374,12 +7173,12 @@ Diferencias entre el entorno de producción y el de dev
 En el entorno de dev, priorizamos la facilidad de depuración y la velocidad
 de dev. Por ejemplo, en React, el entorno de dev incluye mensajes
 de advertencia detallados para ayudarte a entender y corregir problemas en tu
-cédigo. Tambión se incluyen herramientas como “hot reloading”, que actualiza
+cédigo. Tambión se incluyen herramientas como "hot reloading", que actualiza
 automaticamente tu app en el navegador a medida que modificas el cédigo,
 acelerando el ciclo de dev.
 
 En cambio, en el entorno de producción, la prioridad es la eficiencia y el
-rendimiento. Los mensajes de advertencia detallados y el “hot reloading” son utiles
+rendimiento. Los mensajes de advertencia detallados y el "hot reloading" son utiles
 durante el dev, pero pueden ralentizar tu app en producción y exponer
 detalles de implementación que preferirias mantener privados. Por lo tanto, estas
 
@@ -7415,8 +7214,8 @@ plataformas populares de hosting.
 Despliegue en plataformas populares
 (Netlify, Vercel, Firebase...)
 
-Las plataformas de despliegue de aplicaciones web, como Netlify, Vercel o Firebase,
-son servicios que permiten publicar aplicaciones web en Internet. A diferencia
+Las plataformas de despliegue de apps web, como Netlify, Vercel o Firebase,
+son servicios que permiten publicar apps web en Internet. A diferencia
 de los servicios de hosting tradicionales, que a menudo requieren que nosotros
 gestionemos manualmente los servidores y subamos los archivos a través de FTP,
 estas plataformas nos proporcionan herramientas y servicios integrados disefiados
@@ -7424,9 +7223,9 @@ estas plataformas nos proporcionan herramientas y servicios integrados disefiado
 para facilitar el proceso de despliegue.
 
 Estas plataformas se encargan de la infraestructura y la gestión del servidor,
-permitióndonos centrarnos en el dev de nuestras aplicaciones. Ademas,
+permitióndonos centrarnos en el dev de nuestras apps. Ademas,
 ofrecen caracteristicas como la integración continua/despliegue continuo (CI/CD),
-que permiten desplegar automaticamente las aplicaciones cada vez que hacemos
+que permiten desplegar automaticamente las apps cada vez que hacemos
 un push al repositorio de cédigo, y la posibilidad de revertir a versiones anteriores
 de la aplicacin si algo sale mal.
 
@@ -7442,7 +7241,7 @@ Pagina de producto de Vercel
 
 Vercel es una plataforma de despliegue en la nube que proporciona funcionalidades
 de despliegue continuo desde repositorios de Git. Es especialmente util para
-aplicaciones de JS, incluyendo React.
+apps de JS, incluyendo React.
 
 Acontinuación, te guiaré a través de los pasos para desplegar una app React
 en Vercel.
@@ -7489,7 +7288,7 @@ Paso 4: Desplegar tu aplicacion en Vercel
 Una vez que hayas iniciado sesión en Vercel, puedes desplegar tu app
 siguiendo estos pasos:
 
-1. Haz clic en “New Project”.
+1. Haz clic en "New Project".
 
 2. Selecciona tu repositorio de Git. Si has iniciado sesión con tu cuenta de GitHub,
 GitLab o Bitbucket, deberias ver tus repositorios en la lista. Si no, puedes
@@ -7500,7 +7299,7 @@ construcción seanpm run buildyel directorio de salida sea build/. Vercel
 deberia detectar estos automaticamente si estas desplegando una app
 React.
 
-4. Haz clic en “Deploy”. Vercel construira y desplegara tu app.
+4. Haz clic en "Deploy". Vercel construira y desplegara tu app.
 
 Una vez que tu app esté desplegada, recibiras una URL unica donde
 podras acceder a ella. Vercel tambión continuard desplegando automaticamente tu
@@ -7522,7 +7321,7 @@ Pagina de producto de Netlify
 
 Netlify es una plataforma de despliegue en la nube que proporciona
 funcionalidades de despliegue continuo desde repositorios de Git, al igual
-que Vercel. Es una excelente opción para desplegar aplicaciones de JS,
+que Vercel. Es una excelente opción para desplegar apps de JS,
 incluyendo tambión React.
 
 Acontinuación, te guiaré a través de los pasos para desplegar una app React
@@ -7552,7 +7351,7 @@ Paso 4: Desplegar tu app en Netlify
 Una vez que hayas iniciado sesión, puedes desplegar tu app siguiendo estos
 pasos:
 
-1. Haz clic en el botón “New site from Git”.
+1. Haz clic en el botón "New site from Git".
 
 2. Selecciona tu proveedor de Git (GitHub, GitLab, Bitbucket) y autoriza a Netlify
 para acceder a tus repositorios.
@@ -7562,7 +7361,7 @@ para acceder a tus repositorios.
 4.En la configuración de despliegue, asegurate de que el comando de
 construcción seanpm run buildyel directorio de publicación sea build/.
 
-5. Haz clic en “Deploy site”. Netlify construira y desplegara tu app.
+5. Haz clic en "Deploy site". Netlify construira y desplegara tu app.
 Una vez que tu app esté desplegada, recibiras una URL tnica donde podras
 acceder a ella. Netlify tambión continuard desplegando automaticamente tu
 
@@ -7582,8 +7381,8 @@ for your web app
 
 Pagina de producto de Firebase Hosting
 
-Firebase Hosting es un servicio de hosting de aplicaciones web de Google.
-Proporciona una forma rapida y facil de desplegar aplicaciones web de un solo
+Firebase Hosting es un servicio de hosting de apps web de Google.
+Proporciona una forma rapida y facil de desplegar apps web de un solo
 archivo o de varias paginas. A continuacidn, te guiaré a través de los pasos para
 desplegar una app React en Firebase Hosting.
 
@@ -7625,7 +7424,7 @@ Ahora puedes inicializar tu proyecto de Firebase con el siguiente comando:
 1 $ firebase init
 
 Esto iniciara un asistente interactivo. Cuando se te pregunte qué caracteristicas de
-Firebase quieres usar, selecciona “Hosting”. Luego, elige el proyecto de Firebase que
+Firebase quieres usar, selecciona "Hosting". Luego, elige el proyecto de Firebase que
 creaste en la consola de Firebase.
 
 Cuando se te pregunte por el directorio publico, introduce build/. Esto es porque
@@ -7658,17 +7457,17 @@ despl\
 
 Este comando subira tu app al servicio de alojamiento. Una vez que tu
 aplicacion esté desplegada, recibiras una URL tnica donde podras acceder a ella.
-SEO y rendimiento en aplicaciones de React
+SEO y rendimiento en apps de React
 
 Tanto el SEO (Search Engine Optimization) y el rendimiento son dos aspectos
 cruciales para cualquier app web cuya propuesta de valor es el contenido, y
-las aplicaciones React no son una excepción. En este apartado, vamos a explorar
+las apps React no son una excepción. En este apartado, vamos a explorar
 cémo optimizar tu app React para los motores de busqueda y mejorar su
 rendimiento.
 
 SEO en React
 
-Las aplicaciones de React son aplicaciones de una sola pagina (SPA), lo que significa
+Las apps de React son apps de una sola pagina (SPA), lo que significa
 que toda la app se carga en una tinica pagina o documento HTML y luego se
 actualiza dindmicamente a medida que los usuarios interacttian con ella. Aunque
 esto puede proporcionar una experiencia de usuario fluida, puede presentar
@@ -7731,7 +7530,7 @@ Uso de React.lazy y Suspense
 
 Tambión lo vimos en anteriores capitulos, React. lazy y Suspense son dos
 caracteristicas de React que te permiten cargar tus componentes de manera
-“perezosa” (lazy loading), lo que significa que los componentes no se cargaran hasta
+"perezosa" (lazy loading), lo que significa que los componentes no se cargaran hasta
 que sean necesarios. Esto puede mejorar significativamente el tiempo de carga de tu
 
 app.
@@ -7754,7 +7553,7 @@ que sigue siendo segura, eficiente y relevante para tus usuarios.
 Aunque hemos cubierto mucho en este capitulo, todavia hay mucho mas que
 aprender sobre React y el dev web en general. Te animo a que sigas
 explorando, experimentando y aprendiendo. Y recuerda, la mejor manera de
-aprender es haciendo, asi que no tengas miedo de “ensuciarte las manos” y
+aprender es haciendo, asi que no tengas miedo de "ensuciarte las manos" y
 construir cosas.
 Referencias
 
@@ -7787,22 +7586,22 @@ estado, las props de los componentes, el manejo de eventos y los complejos ciclo
 vida de los componentes de React.
 
 Experimentamos la flexibilidad y potencia de la gestión del estado global con
-la Context API y Redux, y aprendimos a navegar en nuestras aplicaciones con
-React Router. Ademas, abordamos técnicas para estilizar nuestras aplicaciones y
+la Context API y Redux, y aprendimos a navegar en nuestras apps con
+React Router. Ademas, abordamos técnicas para estilizar nuestras apps y
 adaptarlas a diferentes tamafios de ventana.
 
 En los capitulos finales, nos adentramos en el consumo de APIs y la comunicación
-con el servidor, aprendiendo cémo optimizar nuestras aplicaciones para obtener
+con el servidor, aprendiendo cémo optimizar nuestras apps para obtener
 el maximo rendimiento y como garantizar la calidad de nuestro cédigo mediante
 pruebas y herramientas de mantenimiento.
 
-Finalmente, exploramos cémo preparar nuestras aplicaciones para su despliegue y
+Finalmente, exploramos cémo preparar nuestras apps para su despliegue y
 discutimos estrategias para mejorar el SEO y el rendimiento en producción.
 
 Aunque hemos abordado una amplia variedad de temas, el viaje con React.js no
 
 termina aqui. Existen muchos otros aspectos de React y su ecosistema que puedes
-descubrir. Por ejemplo, puedes aventurarte en el dev de aplicaciones méviles
+descubrir. Por ejemplo, puedes aventurarte en el dev de apps méviles
 con React Native o profundizar en técnicas de dev con Server-Side Rendering
 (SSR) usando Next.js. Tambión puedes explorar bibliotecas y herramientas como
 React Query, Redux Toolkit y otros elementos del ecosistema de React.
