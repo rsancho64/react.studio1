@@ -399,6 +399,7 @@ Creación de un proyecto de React
 
 *Setup con Vite*
 
+
 Ya hemos visto JSX que es una de las tecnologias o caracteristicas que distinguen a React y ahora podemos ponernos manos a la obra a crear lo que seria nuestra primera app web con esta biblioteca.
 @@@@@
 No vamos a hacer nada del otro mundo, simplemente algo muy sencillo pero a la vez necesario para entender el flujo de la programación, las herramientas y diversas
