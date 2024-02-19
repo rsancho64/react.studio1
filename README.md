@@ -1,17 +1,13 @@
-images [**here**](https://drive.google.com/file/d/1e35_3z3mzMrMLWKYuKPk6-x6rPtT_kQu/view?usp=drive_link)
-
-Guia para aprender ReactJS desde cero
-Carlos Azaustre
+Una guia para aprender ReactJS desde cero
+creditos: Carlos Azaustre
 
 A la venta en http://leanpub.com/cazaustre-react
-Esta versión se publicé en 08/09/2023
+Esta versión se publicó en 08/09/2023
 
-Este es un libro de Leanpub. Leanpub anima a los autores y publicadoras con el proceso de publicación. Lean Publishing es el acto de publicar un libro en progreso usando herramientas sencillas y muchas iteraciones para obtener retroalimentación del lector hasta conseguir el libro adecuado.
+Este es un libro de Leanpub. Leanpub anima a autores y editores con el proceso de publicación. Lean Publishing es la acción y efecto de publicar un '*libro en progreso*' usando herramientas sencillas y muchas iteraciones para obtener retroalimentación de los lectores hasta conseguir el libro adecuado.
 
-© 2023 Carlos Azaustre por la obra y la edición.
-
-A mi hija, Aroa.
-Para que sea lo que ella quiera ser.
+- [ ] resumir/reducir (en progreso)
+- [ ] he retroalimentado ya -yo, como lector- ?
 
 ```sh
 TOC
@@ -402,8 +398,7 @@ Creación de un proyecto de React
 
 Ya hemos visto JSX que es una de las tecnologias o caracteristicas que distinguen a React y ahora podemos ponernos manos a la obra a crear lo que seria nuestra primera app web con esta biblioteca.
 @@@@@
-No vamos a hacer nada del otro mundo, simplemente algo muy sencillo pero a la vez necesario para entender el flujo de la programación, las herramientas y diversas
-cosas a tener en cuenta que la primera vez pueden ser un poco liosas, pero luego ya se hacen de forma sistématica y dejamos de tenerlas en cuenta.
+No vamos a hacer nada del otro mundo, simplemente algo muy sencillo pero a la vez necesario para entender el flujo de la programación, las herramientas y diversas cosas a tener en cuenta que la primera vez pueden ser un poco liosas, pero luego ya se hacen de forma sistématica y dejamos de tenerlas en cuenta.
 
 Hay diversas formas de crear una app con React desde cero. Ninguna es mejor ni peor, inicamente cambia la forma de configurar todo antes de empezar.
 
