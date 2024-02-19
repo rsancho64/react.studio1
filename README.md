@@ -395,19 +395,17 @@ Creación de un proyecto de React
 
 *Setup con Vite*
 
-
 Ya hemos visto JSX que es una de las tecnologias o caracteristicas que distinguen a React y ahora podemos ponernos manos a la obra a crear lo que seria nuestra primera app web con esta biblioteca.
-@@@@@
+
 No vamos a hacer nada del otro mundo, simplemente algo muy sencillo pero a la vez necesario para entender el flujo de la programación, las herramientas y diversas cosas a tener en cuenta que la primera vez pueden ser un poco liosas, pero luego ya se hacen de forma sistématica y dejamos de tenerlas en cuenta.
 
 Hay diversas formas de crear una app con React desde cero. Ninguna es mejor ni peor, inicamente cambia la forma de configurar todo antes de empezar.
 
-Podemos hacerlo de forma "manual", para ello necesitariamos instalar y configurar Webpack u otra herramienta de empaquetado y transpilación de código JSX y JS moderno a código comprensible por el navegador, ademas de varios plugins para que esto funcione correctamente y por supuesto, las bibliotecas o paquetes react y react -dom necesarias para poder utilizar sus funciones.
+Podemos hacerlo de forma "manual", para ello necesitariamos instalar/configurar **Webpack** u otra herramienta de empaquetado y transpilación de código JSX y JS moderno a código comprensible por el navegador, ademas de varios plugins para que esto funcione correctamente y por supuesto, las bibliotecas o paquetes `react` y `react-dom`.
 
-Puede ser interesante de hacer esto si quieres comprender "la magia" detras de las herramientas actuales, pero hoy en dia, en mi opinion, si es tu primera vez en este
-ecosistema de dev web con React, son mas trabas y frustaciones a llevarse, que arrancar con algo mas configurado por defecto y que te permite centrarte en aprender la librerfa y forma de trabajar con ella.
+Puede ser interesante de hacer esto si quieres comprender "la magia" tras las herramientas actuales, pero hoy en dia, en mi opinion, si es tu primera vez en este ecosistema de dev web con React, son mas trabas y frustaciones a llevarse, que arrancar con algo mas configurado por defecto y que te permite centrarte en aprender la librerfa y forma de trabajar con ella.
 
-Por ello existen 3 alternativas. 
+Por ello existen 3 alternativas.
 
 1. **`create-react-app`**, del propio equipo de React, un scaffolder que instala todo lo necesario y genera la estructura de archivos/carpetas de un "Hola Mundo" React. Deprecada.
 
@@ -415,181 +413,99 @@ Por ello existen 3 alternativas.
 
 3. **Vite**: muy veloz, hace lo mismo que create-react-app pero utilizando ESBuild en lugar de Webpack para el empaquetado, reduciendo asi los tiempos de transpilación, y tb multi-libreria. No solo sirve para React; tb para Vue, Svelte, Lit incluso Vanilla JS, y sus versiones con TypeScript.
 
-En este momento es la herramienta mas popular y que mejores valoraciones tiene segun la ultima encuesta sobre el "Estado de JS" y vaa ser la que utilicemos 
-en este libro. De esta manera pondremos todas nuestras energias en React dejando de un lado configuraciones tediosas.
-
+En este momento Vite es la herramienta mas popular y mejor valorada -ultima encuesta sobre el "Estado de JS"- y va a ser la que utilicemos en este libro. De esta manera pondremos todas nuestras energias en React dejando de un lado configuraciones tediosas.
 
 ```sh
-3 vue
-RATIOS OVER TIME vonne peace
-6 lit
-svelte
-Elegimos la variante sin TypeScript
-? Select a variant: >» - Use arrow-keys. Return to submit.
-2» react
-react-ts
+npm create vite@latest my-app
+# elegimos: 1: la opcion React; 2: variante sin TypeScript (JS) y sin SWC (a rust-based platform)
+# ,, cd myapp
+# ,, npm install
+# ,, npm run dev
+  VITE v5.1.3  ready in 102 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
 ```
 
-Y ya sdlo tenemos que ir al directorio que se acaba de crear y ejecutar los comandos que nos indica para que se instalen las dependencias y se ejecute el código en un
-servidor de dev local:
+Tenemos en local [http://localhost:5173/](http://localhost:5173/) una web con los iconos de las dos tecnologias esenciales (Vite + React) y un boton contador para probar estados y eventos.
 
-Encuesta del Estado de JS 2022
-av Select a framework: > react
-v Select a variant: >» react
+### Estructura de archivos y carpetas
 
-3 
-Para poder usar Vite, necesitamos tener Node.js instalado como dijimos en el capitulo donde comentabamos el entorno de dev. Si ya lo tienes, 4 Scaffolding project in /Users/carlosazaustre/Books/react-practico\
-/code/my-app.
+Pasemos a ver código generado y comentamos ...
 
-simplemente has de correr el siguiente comando en la terminal:
+```sh
+tree -L 1 # @my-app/ 
+.
+├── index.html
+├── node_modules # -[x]
+├── package.json # -[x]
+├── package-lock.json
+├── public
+├── README.md
+├── src  # !!
+└── vite.config.js
 
-1 $ npm create vite@latest my-app > Done. Now run:
-cd my-app
-10 mpm install
-npm run dev
+tree ./src/ -L 1
+./src/
+├── App.css   # !!
+├── App.jsx   # !!
+├── assets
+├── index.css # !!
+└── main.jsx  # !!
 
-Seleccionamos la opción de React:
+```
 
-1? Select a framework: > - Use arrow-keys. Return to submit.
-vanilla
-Al ejecutar el comando de dev, si vamos a nuestro navegador a la URL http://localhost:5173 (0 el puerto en el que esté corriendo) veremos lo siguiente:
+- `node_modules/` alberga todos los paquetes instalados: react, react-dom y todos los que dependan de ellos. Debemos indicarla en el `.gitignore`. Gracias al fichero de manifiesto package.json ...
 
-Hello Vite + React!
+- `package.json` ... siempre podremos regenerar node_modules. Contiene algo de metadata, las dependencias (en run y en dev) y alias para los scripts
 
-Edit App. j Sx and save to test HMR updates.
+  - `dev` ejecuta un servidor local con hot reloading para probar nuestra app en navegador.
+  - `build` prepara nuestro código para ser desplegado en un entorno de producción.
+  - `preview` ejecuta un srv local con el código de producción.
+  - `lint` ejecuta el linter para verificar que nuestro código sigue las normas de estilo (especificadas en `eslintre.cjs`().
 
-### Hola Mundo con React y Vite
+- `vite.config.js` contiene la config de Vite y de las herramientas dev. Es muy sencillo y practicamente no hay que tocar nada si no se necesita algo mis especifico. Con su Zero-Config, Vite ya esta listo para ser usado. Y como creando el proyecto, en el menu elegimos la opción React, esta ya incorpora los plugins necesarios para entender JSX y JS moderno.
 
-Nuestro primer "Hola Mundo" con React! Con un logo en SVG rotando, un poco de texto y un boton con un contador para probar estados y eventos. 
 
-Estructura de archivos y carpetas
+```js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-Pasemos a ver que código nos generé. Esta es la estructura de archivos y carpetas si abrimos nuestro editor de código:
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+```
 
-1 - node_modules
-2 - sre
-3 - App.css
-4 - App. jsx
-- favicon. svg
-6 - index.css
-- logo.svg
-8 - main. jsx
-9 - eslintre.cjs
-- .gitignore
-- index.html
-- package-lock. json
-- package. json
-, - vite.config.js
+- `index.html` es el unico html fuente y es sumamente simple.
 
-Parecen muchos archivos pero en realidad no son tantos. Te paso a comentar cada uno de ellos:
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
 
-node_modules
+metadatos en `head` y un `body` sólo con un `div` (con `id root`) donde se incruste/renderice toda nuestra app React, indicada (como module, par apoder usar los ESModules e imports que JS introdujo en su version ES6) 
 
-Este directorio alberga todos los paquetes que estan instalados, como react y react-domyasu vez todos los que dependan de ellos. Es una carpeta que debemos
-tener apuntada en nuestro fichero . git ignore para evitar que se suba a nuestro repositorio. ¢Por qué? pues, entre otras cosas, porque ocupan mucho espacio y
-gracias al fichero package. json siempre tendremos el registro de cudles y qué versiones son.
+- `src/` alberga todo el código fuente de nuestra app. ficheros de estilos css y algunas imagenes, y, sobre todo:
 
-`package.json`
 
-Este fichero es el manifiesto de nuestra app. Contiene algo de metadata, las dependencias que usa (en run y en dev) Tb los alias para ejecutar scripts:
+- App.jsx. 
 
-af
+- `src/main.jsx` El main tiene extensión **`.jsx`**. Puede usarse la `.js`, va a funcionar igual, aunque por convención, siendo el fichero un componente React lo ideal es que lo nombremos como tal, como cuando utilice código JSX.
 
-2 "name": "my-app",
-3 "private": true,
-4 "version": "0.0.0",
-"module",
-{
-"vite",
-"vite build",
-""eslint sre --ext js,jsx --report-unused-disable-
-
-directives --max-warnings 0",
-
-14 "preview": "vite preview"
-
-12},
-
-1.  "dependencies": {
-
-14 "react": "18.2.0",
-15 ""react-dom": "*18.2.0"
-16},
-17 "devDependencies": {
-18 "@types/react": "*18.0.37",
-19 "@types/react-dom": "18.0.11",
-20 "@vitejs/plugin-react": "*4.0.0",
-22 "eslint-plugin-react": "*7.32.2",
-23 "eslint-plugin-react-hooks":
-24 "eslint": "8.38.0",
-
-"44.6.0",
-"40.3.4",
-
-slint-plugin-react-refresh":
-vite 4.3.9"
-
-El script dev ejecuta un servidor local de dev para probar nuestra app en el navegador e incorpora hot reloading. Esto quiere decir que a cada cambio que hagamos en nuestro código, se vera reflejado en el navegador inmediatamente sin necesidad de tener que recargarlo manualmente.
-
-El script build prepara nuestro código para ser desplegado en un entorno de producción.
-
-preview ejecuta un servidor local pero el código que emplea para ello es el código ya listo para producción.
-
-Y por ultimo lint ejecuta el linter para verificar que nuestro código sigue las normas de estilo especificadas en el ficheroeslintre.cjs.
-
-vite.config.js
-
-Este fichero contiene la configuración de Vite y de las herramientas de dev. Es muy sencillo y practicamente no hay que tocar nada a no ser que quieras algo
-mis especifico. Con su Zero-Config, Vite ya esta listo para ser usado. Y como en el menu de la terminal, cuando estabamos creando el proyecto, elegimos la opción
-de react, esta ya incorpora los plugins necesarios para entender JSX y JS moderno.
-
-1 import { defineConfig } from ‘vite’
-2 import react from '@vitejs/plugin-react'
-4 // https://vitejs.dev/config/
-5 export default defineConfig({
-6 plugins: [react()],
-
-index.HTML.
-
-El fichero index.htm es el unico documento HTML que tendremos como fuente. Es sumamente sencillo
-
-1 <!DOCTYPE htm1>
-2 <html lang="en">
-3 <head>
-4 <meta charset="UIF-8" />
-5 <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-6 <meta name="viewport" content="width=device-width,
-
-initial-sc\
-
-7 ale=1.0" />
-8 <title>Vite + React</title>
-9 </head>
-10 <body>
-11 <div id="root"></div>
-12 <script type="module" src="/sre/main. jsx"></script>
-13 </body>
-14 </htm1>
-
-Tiene algunas etiquetas de metadatos en el elemento `head` y en el `body` sólo hay un `div` con el `id root` que sera donde se incruste o renderice toda nuestra app gracias a React.
-
-Para que funcione, necesitamos incorportar el fichero de entrada de la app en JS, que es el main. jsx que se encuentra en la carpeta src. Los afiadimos como script al HTML y le indicamos que sera de tipo médulo para poder utilizar los ESModules e imports que JS introdujo en su version ES6.
-
-`src/`
-
-Esta es la carpeta que alberga todo el código fuente de nuestra app. Verds que hay varios archivos pero los que nos interesan son el main. jsx y el App. jsx. El
-resto son ficheros de estilos css y algunas imagenes. 
-
-`main.JSX`
-
-El fichero principal de la app. Si te das cuenta, tiene extensión JSX. Puedes usar la extension . js, va a funcionar igual, aunque por convención, si el fichero es
-un componente de React y/o utiliza código JSX lo ideal es que lo nombremos como tal.
-
-Ademis si utilizas un theme en tu editor para mostrar iconos diferentes segtin el
-
-tipo de archivo, los ficheros . jsx los muestra con el icono de React.
-Estructura de archivos y carpetas en VSCode utilizando la extensión File-Icons
-
+tip: Si utilizas un theme en tu ide (como File-Icons) para mostrar iconos diferentes por extension los ficheros .jsx los muestra con el icono React.
+Estructura de archivos y carpetas en VSCode utilizando la extensión 
+@@@@
 Este es su contenido y ahora lo explicamos:
 
 1 import React from ‘react’
